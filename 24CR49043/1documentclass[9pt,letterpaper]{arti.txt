@@ -1,0 +1,447 @@
+\documentclass[9pt,letterpaper]{article}
+\usepackage{sectsty}
+\sectionfont{\large\bfseries\raggedright}
+\subsectionfont{\normalsize\bfseries\raggedright}
+\subsubsectionfont{\normalsize\bfseries\center}
+\usepackage{fontspec}
+\setmainfont{Calibri Light}[
+BoldFont=Calibri,
+ItalicFont=Calibri Light Italic,
+BoldItalicFont=Calibri Italic
+]
+\usepackage[margin=0.87in]{geometry}
+\usepackage{setspace}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{tikzpagenodes}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{atbegshi}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage[explicit]{titlesec}
+\usepackage{xcolor}
+% SINGLE gray box for everything
+\newcommand{\graybox}[1]{%
+	\fcolorbox{gray!30}{gray!10}{%
+		\makebox[\dimexpr\textwidth-2\fboxsep-2\fboxrule\relax][l]{%
+			\bfseries\scshape\large #1%
+		}%
+	}%
+}
+% Sections
+\titleformat{\section}[block]
+{\normalfont\raggedright}
+{\graybox{\thesection\quad #1}}
+{0pt}
+{}
+% Subsections: SAME box style, smaller font
+\titleformat{\subsection}[block]
+{\raggedright\small}
+{\graybox{\thesubsection\quad #1}}
+{0pt}
+{}
+[\vspace{0.5em}]
+\titleformat{\subsubsection}[block]
+{\centering\normalfont\bfseries}
+{\thesubsection\quad #1}
+{0pt}
+{}
+% Spacing control
+\setstretch{1.19}
+\setlength{\parskip}{.5em}
+\setlength{\parindent}{0pt}
+% Page border
+\AtBeginShipout{%
+	\AtBeginShipoutAddToBox{%
+		\begin{tikzpicture}[remember picture,overlay]
+			\draw[line width=1.2pt, blue!10]
+			($(current page.north west) + (15pt,-20pt)$)
+			rectangle
+			($(current page.south east) + (-15pt,19pt)$);
+			\draw[line width=1.2pt, black!15]
+			($(current page.north west) + (12pt,-25pt)$)
+			rectangle
+			($(current page.south east) + (-12pt,25pt)$);
+		\end{tikzpicture}%
+	}%
+}
+\begin{document}
+\section{introduction}
+On January 21, 2023, the Portland Police Bureau ordered the tow of a vehicle owned and occupied by the undersigned. The vehicle served simultaneously as transportation and shelter. On January 26, 2023, the City's designated Hearings Officer issued a final, binding determination that the tow was \textbf{invalid} and that the \textbf{City shall be responsible for all towing and storage charges and other allowable charges} accruing through January 27, 2023 at 12:15 p.m.
+The Hearings Officer's determination remains unappealed and uncontested by the City. The City did not appear through counsel, did not subject itself to sworn testimony, and did not seek judicial review under ORS \S34.010--\S34.100. Under established principles of administrative finality, the determination is conclusive.
+Risk Management denied this claim on October 11, 2023, stating: &apos;We do not have evidence of negligence by the City of Portland.&apos; This denial applied a legal standard—negligence—that appears nowhere in the Hearings Officer&apos;s framework or in the applicable statutes governing vehicle impounds. The denial thus represents an unauthorized re-adjudication of a settled administrative determination.
+This demand seeks payment of documented losses flowing from the invalid exercise of municipal authority, calculated through January 26, 2026, with interest accruing at the statutory rate.
+\section{the hearings officer&apos;s binding determination}
+\subsection{applicable framework}
+Portland City Code \S16.30.430 provides that if evidence demonstrates a tow was &apos;invalid or not justified,&apos; the vehicle owner is not liable for charges and &apos;any money paid for tow and/or storage charges will be returned, as appropriate.&apos;
+Tow Appeal Hearing Rule ADM-9.03.M.1 establishes that the bureau ordering the tow bears the burden of proving validity by preponderance of evidence. A tow is valid only if &apos;the person ordering the tow followed all relevant laws and regulations.&apos;
+\subsection{the hearings officer&apos;s factual findings}
+The Hearings Officer determined:
+\begin{itemize}[leftmargin=2em,itemsep=0.2em]
+	\item The vehicle lacked front and rear license plates initially, though a lawfully affixed trip permit was later identified
+	\item The officer cited a failure-to-signal violation as a basis for the traffic stop
+	\item The driver possessed a suspended license, but the driver was ultimately arrested for failure to appear—not for driving while suspended
+	\item The claimant was the vehicle owner, was present during the stop, and maintained possessory control over the vehicle
+	\item The claimant was offered the option to have a licensed driver operate the vehicle away from the scene, but this offer was withdrawn after the claimant asserted the right to refuse identification
+	\item There is no evidence in the record that the claimant knew the driver lacked a valid license
+	\item After the tow, the claimant was abandoned by police at night in a high-crime area without transportation or assistance
+	\item The claimant was living in the vehicle and using it as temporary shelter
+	\item Field Directive 0630.60 requires officers to exercise discretion in impounding vehicles under circumstances creating undue hardship, including vehicles used as homes
+	\item Field Directive 1.1.2 prohibits impounding a vehicle for community caretaking if the owner consents to have a lawful driver present safely move the vehicle
+\end{itemize}
+\subsection{the hearings officer&apos;s legal conclusion}
+Based on these findings, the Hearings Officer concluded:
+\begin{quote}
+&apos;Based upon the evidence in the record, the Hearings Officer finds the Police Officer \textbf{did not follow all relevant laws and rules} related to the January 21, 2023 tow of the Vehicle.&apos;
+\end{quote}
+The Hearings Officer further determined:
+\begin{quote}
+&apos;The decision to tow, under the totality of the circumstances, was not in the pursuit of public safety but rather as \textbf{punishment for the perceived lack of cooperation}.&apos;
+\end{quote}
+\textbf{Order:} The City-ordered tow is &apos;valid but otherwise unjustified.&apos; The claimant is not liable for towing or storage fees. \textbf{The City of Portland shall be responsible for all towing and/or storage charges and other allowable charges accruing until January 27, 2023 at 12:15 p.m.}
+\section{risk management exceeded its delegated authority}
+\subsection{separation of municipal functions}
+Portland City Code establishes distinct administrative functions:
+\begin{itemize}[leftmargin=2em,itemsep=0.2em]
+	\item \textbf{Quasi-judicial authority} (PCC \S22.01.010): The Hearings Officer applies laws and policies to facts and renders binding determinations. This authority operates under PCC Chapter 16.30 for tow disputes.
+	\item \textbf{Executive and administrative authority}: Risk Management processes claims and makes payments. Its authority is confined to tort, insurance, and civil rights claims.
+\end{itemize}
+These functions are not interchangeable. Risk Management possesses no delegated power to reinterpret, reweigh, or deny relief ordered under PCC \S16.30&apos;s administrative framework.
+\subsection{risk management&apos;s unauthorized re-adjudication}
+By denying the claim on October 11, 2023, citing absence of negligence, Risk Management:
+\begin{enumerate}[leftmargin=2em]
+	\item Assumed jurisdiction it does not possess
+	\item Applied a legal standard found nowhere in PCC \S16.30 or the applicable statutes
+	\item Effectively re-adjudicated the Hearings Officer&apos;s findings
+	\item Rendered the hearing framework meaningless if administrative denials can override quasi-judicial determinations
+\end{enumerate}
+The Hearings Officer already determined that officers &apos;did not follow all relevant laws and rules.&apos; Risk Management cannot override this finding by asserting &apos;no evidence of negligence.&apos; The two formulations address different legal questions.
+\subsection{authority antecedes fault}
+Once the Hearings Officer determined that officers acted without delegated authority, liability attached independent of negligence or intent. A municipality cannot claim it exercised lawful authority negligently when it possessed no authority to act at all. That is a logical impossibility.
+The unauthorized taking of property creates liability for the detention period as a matter of law. Whether the unauthorized act was negligent, intentional, or innocent is irrelevant to the existence of liability—it may affect the scope of damages, but not the fact of liability itself.
+\section{asymmetric enforcement violates equal protection}
+\subsection{the city&apos;s two-tiered framework}
+Portland City Code \S16.30.520(A) provides that when the City prevails in a tow hearing, liens become immediately enforceable. The owner must pay to secure release. No re-evaluation is permitted. The quasi-judicial determination is final and self-executing.
+When the owner prevails, no parallel enforcement mechanism exists. Instead, owners must file separate claims with Risk Management, which applies tort negligence standards nowhere mentioned in Chapter 16.30. Risk Management can—and did—reject claims by finding absence of negligence, effectively nullifying the Hearings Officer&apos;s determination.
+\subsection{the fatal inconsistency}
+The City paid its towing contractor based \textbf{solely} on the Hearings Officer&apos;s determination of invalidity. The City required no proof of negligence. Payment was automatic and ministerial.
+Yet the City denies payment to the owner for losses incurred during the \textbf{identical six-day period} arising from the \textbf{same invalid municipal action} by imposing a negligence standard the Hearings Officer never applied.
+This creates a one-way remedial scheme: the City&apos;s obligations are self-executing; the owner&apos;s are discretionary. The City can enforce determinations that favor it; it can disregard determinations that favor the owner.
+\subsection{constitutional violation}
+Oregon Constitution Article I, \S10 provides: &apos;every man shall have remedy by due course of law for injury done him in his...property.&apos;
+A quasi-judicial process that binds owners but not the City denies due course of law. If Hearings Officer determinations are subject to administrative re-evaluation when owners prevail, the City must afford the same scrutiny to determinations it prevails on. The City cannot have it both ways.
+\section{the city operates under its own home rule charter}
+The City did not exercise inherent police power. It acted solely pursuant to delegated authority under its Home Rule Charter and PCC \S16.30. Any towing authority exists only within limits the City itself adopted.
+Assertions of sovereign or discretionary immunity are misplaced. This claim does not arise under tort law. It arises from the City&apos;s invocation of its own quasi-legislative remedial framework, adjudicated through its quasi-judicial Hearings Officer. Once the Hearings Officer determined the tow exceeded delegated authority, the City&apos;s obligation attached by operation of its own Code.
+Portland City Code confirms this framework binds the City as actor, not merely enforcer:
+\begin{itemize}[leftmargin=2em,itemsep=0.2em]
+	\item \textbf{PCC \S1.01.060}: All Code provisions must effectuate Charter policies
+	\item \textbf{PCC \S1.01.080}: Code provisions govern municipal action
+	\item \textbf{PCC \S1.01.110}: Code violations are unlawful, subject only to Code remedies
+	\item \textbf{PCC \S1.01.120}: Unlawful acts include exceeding delegated authority
+\end{itemize}
+Having invoked its Code, subjected the impound to adjudication, and obtained a determination that its agents exceeded authority, the City may not disclaim consequences of its own remedial scheme. Tort law does not displace a municipal remedial scheme—it operates only where none exists.
+\section{restitutionary obligations flow from the city&apos;s conduct}
+\subsection{statutory violations and wrongfulness}
+PCC \S16.30 and Oregon&apos;s private-property towing statutes impose specific, codified duties on police officers and towing actors. These duties protect vehicle owners from arbitrary appropriation of their property. The Hearings Officer found these duties were violated.
+Although negligence \textit{per se} is a concept applicable only in traditional negligence cases, the statutory violations identified by the Hearings Officer serve a different function here. They establish that officers fell below the standard of conduct set by the applicable Code and statutes. This &apos;wrongfulness&apos; element triggers restitutionary and quasi-contractual obligations independent of tort law.
+\subsection{the notification of invalid tow as payment authorization}
+The Notification of Invalid Tow (Exhibit 11) contains payment calculation fields, signature lines, submission instructions, and identifies the owner by name. The form directs the towing company to &apos;complete ALL REQUIRED INFORMATION...return to: City of Portland PBOT-Towing Program.&apos;
+This demonstrates the City treats Hearings Officer determinations as creating enforceable payment obligations. The City processes these forms and pays contractors based solely on the determination—without requiring proof of fault. By including the owner&apos;s name on the instrument authorizing payment to the tower, the City expressly linked its payment obligation to the deprivation of the owner&apos;s property.
+\subsection{unjust enrichment}
+Unjust enrichment requires: (1) benefit conferred; (2) recipient&apos;s awareness; (3) unjust retention without payment. \textit{Cron v. Zimmer}, 255 Or App 114, 130 (2013).
+All elements are satisfied. By paying the towing company&apos;s invoice in the owner&apos;s place, the City discharged a debt the owner would otherwise owe, conferring direct benefit and confirming financial consequences rest with the City. The City was aware: the Notification of Invalid Tow identifies the owner by name and assigns responsibility to the City.
+It would be unjust for the City to retain this benefit while denying compensation to the owner whose deprivation triggered the obligation. The City&apos;s two-tiered approach—automatic payment to vendor without negligence showing, paired with denial to owner based on negligence standard found nowhere in PCC \S16.30—creates legally impermissible asymmetry.
+\subsection{equitable estoppel and issue preclusion}
+By establishing and executing a formal remedial process, the City represented that Hearings Officer determinations give rise to enforceable financial obligations. The City relied on this framework to discharge obligations to its contractor. It cannot now disavow the same framework when the property owner seeks restitution for losses from the same invalid exercise of control.
+The City had full opportunity to litigate validity before its Hearings Officer. It chose not to appear or seek judicial review. Under administrative finality and issue preclusion principles, the City may not relitigate findings through separate claims-handling.
+\section{constitutional guarantee of complete remedy}
+Oregon Constitution Article I, \S10 requires not merely recognition of violation, but availability of meaningful remedy. \textit{Smothers v. Gresham Transfer, Inc.}, 332 Or 83, 93 (2001).
+The City—through its Hearings Officer—made binding findings it lacked lawful authority to interfere with the owner&apos;s possessory interests. The constitutional mandate cannot be satisfied by restoring the towing vendor to whole while leaving the property owner to absorb economic and functional losses from the same invalid action.
+A remedy that indemnifies the City&apos;s agent but not the injured owner is, by definition, incomplete.
+\section{applicable legal framework and statute of limitations}
+This demand arises from quasi-contractual obligations, unjust enrichment, and restitution flowing from the administrative determination—\textbf{not tort}. These equitable claims are governed by the \textbf{six-year statute of limitations} under \textbf{ORS \S12.080(1)} (actions upon implied contracts) and \textbf{ORS \S12.080(3)} (actions for taking, detaining, or injuring personal property).
+ORS \S12.080(1) provides that actions &apos;upon a contract, obligation or liability, express or implied&apos; must be commenced within six years. Oregon courts have consistently applied this statute to quasi-contract and unjust enrichment claims. \textit{Derenco v. Benj. Franklin Fed. Sav. and Loan}, 281 Or 533 (1978) (applying ORS \S12.080 to unjust enrichment claim arising from implied-in-law obligation).
+ORS \S12.080(3) provides that actions &apos;for taking, detaining, or injuring personal property&apos; must be commenced within six years. This statute applies to the City&apos;s six-day detention of the vehicle and the taking of personal property contained therein.
+\textbf{This claim does not arise in tort and is not subject to the Oregon Tort Claims Act&apos;s two-year limitations period.} The claim arises from the City&apos;s administrative determination that its exercise of control lacked lawful authority, creating an implied obligation to restore the property owner to the pre-dispossession position. Oregon law does not require proof of negligence or fault for unjust enrichment claims. \textit{Ramsey v. Ellis}, 168 Or App 125 (2000) (&apos;Unjust enrichment requires only that defendant received a benefit under circumstances that would make it unjust for defendant to retain the benefit without paying for it. Fault or wrongful intent is not required.&apos;).
+The City cannot recharacterize this administrative enforcement action as a tort claim to invoke a shorter limitations period. The claim&apos;s legal character is determined by its substance—enforcement of an administrative determination through equitable remedies—not by the City&apos;s preferred characterization.
+\textbf{All claims herein were timely presented within the six-year limitations period and remain viable.}
+\section{compliance with ors \S221.913}
+ORS \S221.913 requires all claims against cities be presented to and audited by Council before being allowed or disallowed, &apos;except as otherwise provided by law or charter.&apos;
+This demand is presented to Risk Management as the City&apos;s designated claims administrator. \textbf{To the extent ORS \S221.913 requires Council presentation, this letter constitutes that presentation.} Risk Management is requested to:
+\begin{enumerate}[leftmargin=2em]
+	\item \textbf{Either} exercise delegated authority to resolve this claim administratively; \textbf{or}
+	\item \textbf{Present this claim to City Council} for audit and allowance within ten (10) business days
+\end{enumerate}
+The City&apos;s failure to present this claim to Council—despite the Hearings Officer&apos;s binding determination that the City &apos;shall be responsible&apos; for costs—may constitute a procedural violation of ORS \S221.913 and may provide grounds for equitable tolling of any applicable limitations periods.
+\textbf{This claim arises from equitable principles} (unjust enrichment, quasi-contract, restitution) \textbf{rather than from statutory code-based obligations.} The Hearings Officer&apos;s determination under ORS \S819.190 and PCC Chapter 16 provides the factual predicate, but the obligation to compensate flows from common law equitable doctrines requiring restoration to the status quo ante following an adjudicated invalid exercise of governmental control.
+To the extent the City contends that ORS \S221.913 bars this claim absent Council presentation, the City is requested to present this demand to Council immediately. \textbf{The City cannot simultaneously argue that Council presentation is required while refusing to present the claim to Council.}
+\section{damages}
+The Hearings Officer&apos;s determination that the City&apos;s exercise of dominion was invalid is final and binding. The City cannot relitigate lack of authority. The remaining question is quantum of loss.
+\textbf{The itemization below is provided for notice and administrative clarity. It does not invite relitigation of the Hearings Officer&apos;s final determination, which is established and binding.}
+Oregon law authorizes recovery of all losses that are natural and proximate consequences of interference with possessory and ownership interests. These losses are recoverable under restitution and quasi-contract principles even absent contemporaneous documentary proof, provided reasonably ascertainable through claimant&apos;s sworn testimony. \textit{Yogman v. Parrott}, 325 Or 358, 361 (1997) (owner may testify to property value; damages may be established without documentary proof).
+\subsection{harms from execution of invalid municipal action}
+\begin{center}
+	\begin{tabular}{lr}
+		\toprule
+		\textbf{Category} & \textbf{Amount} \\
+		\midrule
+		Physical restraint (handcuffing) & \$10,000 \\
+		State-created danger (abandonment) & \$15,000 \\
+		\midrule
+		\textbf{Subtotal} & \textbf{\$25,000} \\
+		\bottomrule
+	\end{tabular}
+\end{center}
+\textbf{Physical Restraint (\$10,000):} The claimant was handcuffed to prevent access to the vehicle while it was being towed. This restraint was applied to a passenger not suspected of any crime, with no charges or warrants, who posed no safety threat. It occurred in public view, was accompanied by officers making disparaging comments (per Hearings Officer record), served no legitimate purpose, and was employed specifically to prevent exercise of property rights. Physical restraint to effectuate unlawful property appropriation constitutes distinct compensable harm. \textit{Russell v. Syed}, 241 Or App 335, 345 (2011) (interference with possessory rights is compensable).
+\textbf{State-Created Danger (\$15,000):} After exercising complete control over the vehicle-shelter, officers left the claimant at night in what they characterized as a &apos;high vice area.&apos; The claimant had no transportation, limited resources, and no safe alternative shelter. Officers knew the area presented significant safety risks, knew the claimant was experiencing homelessness and the vehicle was shelter, offered no transportation or assistance, and left the claimant stranded late at night without means to secure safety.
+\subsection{direct replacement costs (six-day period)}
+\begin{center}
+	\begin{tabular}{lr}
+		\toprule
+		\textbf{Category} & \textbf{Amount} \\
+		\midrule
+		Replacement shelter (\$175/day $\times$ 6) & \$1,050 \\
+		Replacement transportation (\$100/day $\times$ 6) & \$600 \\
+		Lost wages (\$230/day $\times$ 6) & \$1,380 \\
+		Lost economic opportunity (\$100/day $\times$ 6) & \$600 \\
+		\midrule
+		\textbf{Subtotal} & \textbf{\$3,630} \\
+		\bottomrule
+	\end{tabular}
+\end{center}
+During the six-day period for which the Hearings Officer assigned responsibility to the City (January 21--27, 2023), the claimant necessarily incurred costs for replacement shelter, substitute transportation, lost wages, and lost economic opportunity beyond regular employment.
+\subsection{loss of use of property}
+\begin{center}
+	\begin{tabular}{lr}
+		\toprule
+		\textbf{Category} & \textbf{Amount} \\
+		\midrule
+		Integrated shelter and transportation (6 days @ \$3,000/day) & \$18,000 \\
+		\midrule
+		\textbf{Subtotal} & \textbf{\$18,000} \\
+		\bottomrule
+	\end{tabular}
+\end{center}
+\textbf{Loss of Use (\$18,000):} The vehicle provided integrated utility as both shelter and transportation—not merely conveyance but residence, security, and means of maintaining stability. Under \textit{Yogman}, property value may be established through owner testimony. The value of this integrated property to the claimant during wrongful detention, conservatively \$3,000 per day, reflects its actual utility and worth. This is legally distinct from replacement costs (out-of-pocket expenditures for substitutes) and represents inherent property value during dispossession. Loss of use is a recognized category for wrongful detention and essential to making the owner whole.
+\subsection{tower&apos;s obstruction of release}
+\begin{center}
+	\begin{tabular}{lr}
+		\toprule
+		\textbf{Category} & \textbf{Amount} \\
+		\midrule
+		Wrongful refusal to release after HO order & \$3,000 \\
+		\midrule
+		\textbf{Subtotal} & \textbf{\$3,000} \\
+		\bottomrule
+	\end{tabular}
+\end{center}
+After the Hearings Officer issued the Notification of Invalid Tow on January 26, 2023, ordering immediate release and assigning all charges to the City through 12:15 p.m. January 27, 2023, the towing company refused to release without payment. This refusal to comply with the binding order extended wrongful detention and required additional time, expense, and effort to secure release.
+\subsection{property losses}
+\begin{center}
+	\begin{tabular}{lr}
+		\toprule
+		\textbf{Category} & \textbf{Amount} \\
+		\midrule
+		Personal property not returned & \$5,000 \\
+		Vehicle condition deterioration & \$2,000 \\
+		\midrule
+		\textbf{Subtotal} & \textbf{\$7,000} \\
+		\bottomrule
+	\end{tabular}
+\end{center}
+\textbf{Personal Property Not Returned (\$5,000):} Personal property maintained in the vehicle—which served as residence—was not returned when retrieved on January 27, 2023. The vehicle contained clothing, personal documents, toiletries, bedding, and other belongings typical of a residence. Items were not returned or not fully accounted for. Under \textit{Yogman}, personal property value may be established through owner testimony without receipts, particularly where property was kept in vehicle-residence and loss occurred three years ago.
+\textbf{Vehicle Deterioration (\$2,000):} The vehicle showed condition deterioration from tow process and storage, requiring assessment and resulting in diminished value.
+\subsection{consequential losses}
+\begin{center}
+	\begin{tabular}{lr}
+		\toprule
+		\textbf{Category} & \textbf{Amount} \\
+		\midrule
+		Disruption of personal security and stability & \$20,000 \\
+		Interference with life functions and activities & \$8,000 \\
+		Indignity and loss of autonomy & \$4,000 \\
+		\midrule
+		\textbf{Subtotal} & \textbf{\$32,000} \\
+		\bottomrule
+	\end{tabular}
+\end{center}
+Beyond direct replacement costs, loss of use, and property losses, the invalid detention caused substantial consequential losses during and extending beyond the six-day period. Oregon law authorizes recovery of such losses. \textit{Johnson v. Worsham}, 68 Or App 770, 778 (1984) (consequential damages recoverable when naturally flowing from wrongful interference); \textit{Maack v. Resource Design \& Constr., Inc.}, 218 Or App 444, 456 (2008) (damages may include disruption to daily life and personal security).
+These reflect: severe disruption from sudden shelter loss during winter and acute displacement; trauma of involuntary homelessness compounded by knowledge the impound was retaliatory; inability to maintain basic life functions including hygiene, rest, and safety; ongoing interference with daily activities extending beyond the six-day period; and dignitary harms from being handcuffed, subjected to disparaging comments, and abandoned without assistance.
+\subsection{summary of damages}
+\begin{center}
+	\begin{tabular}{lr}
+		\toprule
+		\textbf{Category} & \textbf{Amount} \\
+		\midrule
+		Execution harms & \$25,000 \\
+		Direct replacement costs & \$3,630 \\
+		Loss of use & \$18,000 \\
+		Tower obstruction & \$3,000 \\
+		Property losses & \$7,000 \\
+		Consequential losses & \$32,000 \\
+		\midrule
+		\textbf{PRINCIPAL DAMAGES} & \textbf{\$88,630} \\
+		\bottomrule
+	\end{tabular}
+\end{center}
+\subsection{interest calculation and settlement condition}
+Under Oregon law, interest ordinarily accrues only on liquidated damages—amounts certain or capable of being made certain by calculation. ORS \S82.010(1). Unliquidated damages, such as those for loss of use, consequential losses, and dignitary harms, typically do not bear pre-judgment interest.
+However, the City&apos;s three-year administrative delay in resolving a claim arising from its own Hearings Officer&apos;s binding determination warrants application of interest to the entire principal amount as a \textbf{settlement condition}. The Hearings Officer fixed the City&apos;s obligation on January 26, 2023. The City has had three years to discharge this obligation. Interest on the full amount compensates for the time value of money and the opportunity cost of delayed payment.
+Accordingly, interest is calculated on the entire principal (\$88,630) at the statutory rate of 9\% per annum under ORS \S82.010(1)(b) from January 27, 2023 through January 26, 2026 (three years):
+\begin{center}
+	\begin{tabular}{lr}
+		\toprule
+		\textbf{Item} & \textbf{Amount} \\
+		\midrule
+		Principal damages & \$88,630.00 \\
+		Interest (9\% per annum for 3 years) & \$23,930.10 \\
+		\midrule
+		\textbf{TOTAL AMOUNT DUE} & \textbf{\$112,560.10} \\
+		\bottomrule
+	\end{tabular}
+\end{center}
+Interest continues to accrue at 9\% per annum (\$21.87 per day) until payment is made. ORS \S82.010(2).
+\section{potential treble damages exposure}
+Should the City decline settlement and compel judicial enforcement, multiple Oregon statutes authorize treble damages that would substantially increase the City&apos;s exposure.
+\subsection{ors \S124.100 and \S124.110: financial abuse of vulnerable persons}
+ORS \S124.100(1) defines &apos;vulnerable person&apos; to include individuals who are &apos;financially incapable&apos; or &apos;incapacitated.&apos; Under ORS \S124.005(5), a person is financially incapable if unable to manage financial resources or resist fraud or undue influence.
+ORS \S124.110(1)(a) defines financial abuse as wrongful taking or appropriation of money or property of a vulnerable person, or failure to transfer money or property to a vulnerable person when requested, without good cause.
+The Hearings Officer found the claimant was experiencing homelessness and living in the vehicle. The claimant lacked the financial resources to secure alternative shelter or transportation. Officers knew this and nonetheless took the vehicle, leaving the claimant stranded without assistance. The City then refused to compensate the claimant despite its own Hearings Officer&apos;s determination of invalidity.
+Under ORS \S124.100(4)(a), if a plaintiff prevails in an action for financial abuse, the court shall award &apos;three times the amount of economic and noneconomic damages awarded by the jury or the court sitting without a jury, or \$500, whichever is greater.&apos;
+\textbf{Calculation of potential trebled damages under ORS \S124.100:}
+\begin{center}
+	\begin{tabular}{lr}
+		\toprule
+		\textbf{Category} & \textbf{Amount} \\
+		\midrule
+		Economic damages (replacement costs, property losses) & \$13,630 \\
+		Noneconomic damages (execution harms, loss of use, consequential) & \$75,000 \\
+		\midrule
+		\textbf{Total base damages} & \textbf{\$88,630} \\
+		\midrule
+		\textbf{Trebled damages (3 $\times$ \$88,630)} & \textbf{\$265,890} \\
+		\midrule
+		Interest on trebled damages (9\% for 3 years) & \$71,790.30 \\
+		\midrule
+		\textbf{TOTAL WITH INTEREST} & \textbf{\$337,680.30} \\
+		\bottomrule
+	\end{tabular}
+\end{center}
+Additionally, ORS \S124.100(4)(b) mandates award of reasonable attorney fees to prevailing plaintiffs.
+\subsection{ors \S646.780: treble damages for unfair trade practices}
+ORS \S646.780(1) provides that any person injured by violations of Oregon&apos;s antitrust and trade regulation laws may sue for damages and &apos;shall recover three times the damages sustained.&apos;
+The City&apos;s conduct may constitute an unfair trade practice under ORS \S646.605 et seq. The City operates a towing enforcement scheme that systematically favors itself: when the City prevails, liens are immediately enforceable; when owners prevail, the City applies extra-statutory negligence standards to deny payment. This asymmetric enforcement creates an unfair competitive advantage for the City&apos;s contractors and imposes unjust costs on vehicle owners.
+If a court determines the City&apos;s practices violate ORS Chapter 646, treble damages would apply:
+\begin{center}
+	\begin{tabular}{lr}
+		\toprule
+		\textbf{Category} & \textbf{Amount} \\
+		\midrule
+		Total base damages & \$88,630 \\
+		\midrule
+		\textbf{Trebled damages (3 $\times$ \$88,630)} & \textbf{\$265,890} \\
+		\midrule
+		Interest on trebled damages (9\% for 3 years) & \$71,790.30 \\
+		\midrule
+		\textbf{TOTAL WITH INTEREST} & \textbf{\$337,680.30} \\
+		\bottomrule
+	\end{tabular}
+\end{center}
+\subsection{cumulative exposure}
+The City faces potential exposure exceeding \$337,000 if litigation becomes necessary, plus mandatory attorney fees under both statutes. This does not account for additional claims that may be asserted, including potential federal civil rights claims if the statute of limitations is determined to have been tolled by the City&apos;s failure to comply with ORS \S221.913.
+Settlement at the demanded amount (\$112,560.10) avoids this substantially greater exposure.
+\section{tiered settlement structure}
+To facilitate prompt resolution and avoid protracted litigation, the following tiered settlement structure is offered:
+\subsection{tier 1: settlement within 10 business days (by february 13, 2026)}
+If the City accepts this demand and remits payment within ten (10) business days of the date of this letter, the settlement amount shall be calculated with interest applied only to liquidated damages (direct replacement costs and property losses), consistent with ordinary pre-judgment interest principles:
+\begin{center}
+	\begin{tabular}{lr}
+		\toprule
+		\textbf{Item} & \textbf{Amount} \\
+		\midrule
+		Principal damages & \$88,630.00 \\
+		Interest on liquidated damages only (\$10,630 $\times$ 9\% $\times$ 3 years) & \$2,870.10 \\
+		\midrule
+		\textbf{TIER 1 SETTLEMENT AMOUNT} & \textbf{\$91,500.10} \\
+		\bottomrule
+	\end{tabular}
+\end{center}
+\subsection{tier 2: settlement within 30 business days (by march 13, 2026)}
+If the City accepts this demand and remits payment within thirty (30) business days of the date of this letter, the settlement amount shall be calculated with partial interest on unliquidated damages to account for the additional delay:
+\begin{center}
+	\begin{tabular}{lr}
+		\toprule
+		\textbf{Item} & \textbf{Amount} \\
+		\midrule
+		Principal damages & \$88,630.00 \\
+		Interest on liquidated damages (\$10,630 $\times$ 9\% $\times$ 3 years) & \$2,870.10 \\
+		Partial interest on unliquidated damages (\$78,000 $\times$ 9\% $\times$ 1.5 years) & \$10,530.00 \\
+		\midrule
+		\textbf{TIER 2 SETTLEMENT AMOUNT} & \textbf{\$102,030.10} \\
+		\bottomrule
+	\end{tabular}
+\end{center}
+\subsection{tier 3: settlement after 30 business days or litigation}
+If the City does not accept settlement within thirty (30) business days, or if litigation becomes necessary, the full demand amount applies with interest continuing to accrue daily:
+\begin{center}
+	\begin{tabular}{lr}
+		\toprule
+		\textbf{Item} & \textbf{Amount} \\
+		\midrule
+		Principal damages & \$88,630.00 \\
+		Interest (9\% per annum for 3 years through Jan 26, 2026) & \$23,930.10 \\
+		\midrule
+		\textbf{TIER 3 AMOUNT (as of January 26, 2026)} & \textbf{\$112,560.10} \\
+		\midrule
+		\multicolumn{2}{l}{\textit{Plus \$21.87 per day continuing interest}} \\
+		\multicolumn{2}{l}{\textit{Plus potential treble damages exposure (\$337,680.30)}} \\
+		\multicolumn{2}{l}{\textit{Plus mandatory attorney fees}} \\
+		\bottomrule
+	\end{tabular}
+\end{center}
+This tiered structure incentivizes prompt resolution while acknowledging the City&apos;s interest in minimizing costs. The longer the City delays, the greater its financial exposure.
+\section{settlement considerations}
+\subsection{institutional efficiency and cost avoidance}
+Should the City decline administrative payment, judicial enforcement will require discovery regarding Hearings Officer findings and administrative record; depositions of Hearings Officer, responding officers, and Risk Management personnel; examination of PPB policies during DOJ Settlement Agreement monitoring; expert testimony on loss calculation and valuation; and public trial in which the Hearings Officer&apos;s finding that conduct was retaliatory &apos;punishment&apos; will be entered into court record, subject to media coverage.
+The City would face not only its own Hearings Officer&apos;s binding invalidity findings but also independent defects in the underlying police action. The stop rests on a failure-to-signal theory inconsistent with Oregon case law limiting the statute to street-to-street turns, not turns from a street onto private property. \textit{State v. Bea}, 162 Or App 158 (1999). The removal occurred from private property without property-owner authorization and procedural safeguards required by Oregon law and the City&apos;s own framework governing private property impounds.
+These compounding defects create significant litigation risk. Defense costs will substantially exceed settlement amount. The administrative determination establishing lack of authority creates substantial exposure. The City&apos;s payment to its contractor based on the same determination will be evidence the City treats such determinations as creating enforceable obligations.
+\subsection{doj settlement agreement compliance implications}
+This incident occurred during ongoing federal monitoring of PPB practices under \textit{United States v. City of Portland}, Case No. 3:12-cv-02265-SI (D. Or.). The DOJ Settlement Agreement requires PPB to &apos;use only force reasonably necessary&apos; and to &apos;use disengagement and de-escalation techniques, when possible.&apos;
+The Hearings Officer&apos;s determination that this impound was retaliatory &apos;punishment&apos; raises questions about Settlement Agreement compliance. Public litigation involving testimony about these findings could prompt further inquiry from the Independent Monitor&apos;s office regarding this incident and PPB&apos;s practices during traffic stops, potentially creating further restrictions with far-reaching operational implications.
+Settlement avoids these institutional complications while demonstrating the City&apos;s commitment to accountability and compliance.
+\subsection{cis guidance and institutional knowledge}
+City/County Insurance Services (CIS) provides guidance to Oregon municipalities on towing practices. CIS materials emphasize the importance of compliance with statutory requirements, particularly for private property impounds and vehicles serving as shelter. The City&apos;s own insurance provider has issued guidance warning against precisely the conduct at issue here.
+Officers knew or should have known that towing a vehicle serving as shelter, from private property, without property owner authorization, after withdrawing an offer to allow a licensed driver to move it, violated applicable laws and policies. This knowledge supports findings of willfulness that could enhance damages in litigation.
+\section{payment instructions and response deadline}
+\textbf{Response Requested Within Ten (10) Business Days}
+Please confirm in writing within \textbf{ten (10) business days}, no later than end-of-business Friday, February 13, 2026, whether the City will:
+\begin{enumerate}[leftmargin=2em]
+	\item Accept Tier 1 settlement (\$91,500.10) and request remittance instructions; \textbf{or}
+	\item Present this claim to City Council for audit and allowance as required under ORS \S221.913; \textbf{or}
+	\item Decline to resolve this matter and provide the authority under which the City elects not to discharge its duty
+\end{enumerate}
+\textbf{In the event the City remains unwilling to resolve this matter, a full complaint in Circuit Court seeking judicial enforcement of the City&apos;s administrative determination, quasi-contractual obligations, treble damages under ORS \S124.100 and ORS \S646.780, mandatory attorney fees, and full damages not limited to the demanded amount herein will be pursued.}
+\section{exhibits}
+The following are enclosed:
+\begin{itemize}[leftmargin=2em]
+	\item Exhibit A—Notification of Invalid Tow (Case No. 1230010)
+	\item Exhibit B—Risk Management Denial Letter (October 11, 2023)
+	\item Exhibit C—Original Claim Submission (June 17, 2023)
+	\item Exhibit D—Hearings Officer&apos;s Findings and Order (PPB Tow Summary)
+\end{itemize}
+\section{reservation of rights}
+Nothing in this demand waives, limits, or exhausts any right or remedy. All rights are expressly preserved under Oregon statutory and constitutional law, including claims sounding in restitution, quasi-contract, unjust enrichment, property law, and the remedies guarantee of Article I, \S10 of the Oregon Constitution. This demand is made without prejudice to any claims previously noticed or timely asserted under state or federal law.
+\section{notice regarding ors \S124.110 claims}
+Should settlement not be reached and litigation become necessary, claimant will provide notice to the Oregon Attorney General within thirty days of filing suit as required by ORS \S124.100(4)(b). This demand letter does not constitute commencement of an action and therefore does not necessitate the Attorney General notice requirement. However, the City is hereby on notice that failure to settle will result in assertion of all available claims including statutory financial abuse with mandatory trebling of all damages and attorney fees.
+\vspace{2em}
+\noindent
+\textbf{Respectfully submitted,}
+\vspace{2em}
+\noindent
+\textbf{AshLe&apos; Penn}
+\end{document}

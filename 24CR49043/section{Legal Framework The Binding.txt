@@ -1,0 +1,83 @@
+\section{Legal Framework: The Binding Effect of the Hearings Officer's Quasi-Judicial Determination}
+
+This demand does not ask the City to accept liability for an unadjudicated tort. The validity of the January 21, 2023 tow of my vehicle—and the assignment of responsibility that flows from that determination—was litigated through the City’s own quasi-judicial administrative process under Portland City Code (“PCC”) § 16.30.530. On January 26, 2023, Hearings Officer William Guzman issued a written determination finding the tow \textbf{“INVALID.”} That determination is final under PCC § 16.30.530(D) and binding under Oregon administrative preclusion principles. \textit{Nelson v. Emerald People’s Utility Dist.}, 318 Or 99, 862 P2d 1293 (1993).\\
+\vspace{0.5em}
+
+The payment obligation that follows is not contingent on a subsequent or independent assessment of negligence, fault, or reasonableness by another City department. It arises directly from the City Code itself, which mandates that \textbf{“[t]he City of Portland shall be responsible for all towing and/or storage charges and other allowable charges”} when a tow is determined invalid or otherwise unjustified. PCC § 16.30.530(C). Once the City—acting through its designated Hearings Officer—determined that the deprivation of my possessory interest lacked lawful authorization under the Code, the legal consequences prescribed by that Code attached by operation of law. The deprivation itself was adjudicated; the City’s responsibility for the resulting charges was fixed.\\
+\vspace{0.5em}
+
+At this post-adjudication stage, Risk Management’s role is administrative and ministerial. Its function is to implement the consequences the Code attaches to an invalid tow—not to revisit the merits, reweigh evidence, or apply a different legal standard. A refusal to satisfy the obligations imposed by PCC Chapter 16.30 does not preserve discretion; it places the City in the position of disregarding a binding determination issued through a process the City itself created and declared final. If litigation is forced, the City will not be defending an unresolved tort claim, but explaining why it declined to honor the outcome of its own quasi-judicial proceeding and the mandatory obligations that flow from it.\\
+
+\subsection{The Hearings Officer’s Ruling Was a Final Quasi-Judicial Adjudication}
+
+Under Oregon administrative law, decisions that apply preexisting legal criteria to concrete facts and are directed at a closely circumscribed factual situation or a limited number of persons are quasi-judicial in nature. \textit{Abbott v. City of Cannon Beach}, 143 Or App 505, 924 P2d 1242 (1996); \textit{Fasano v. Board of County Comm’rs}, 264 Or 574, 507 P2d 23 (1973). The January 26, 2023 determination satisfies those criteria. The Hearings Officer applied the tow-validity standards set forth in PCC Chapter 16.30 to a single tow event; the proceeding involved identified parties; and it proceeded through notice, evidentiary submission, written findings, and a final order.\\
+\vspace{0.5em}
+
+PCC § 16.30.530(D) expressly provides that \textbf{“[t]he decision of the hearings officer is final.”} Oregon law gives full effect to municipal code provisions declaring quasi-judicial determinations final unless timely challenged through the exclusive mechanism of writ of review. \textit{Nelson}, 318 Or at 106; ORS 34.020(1). Writ of review is the sole avenue for judicial review of such municipal adjudications. \textit{Joshi v. Providence Health System}, 184 Or App 508, 56 P3d 1205 (2002).\\
+\vspace{0.5em}
+
+No writ of review was sought. The Hearings Officer issued the determination on January 26, 2023; the statutory period for review expired approximately March 27, 2023. The decision therefore became final and unreviewable. The City established this adjudicative framework and its attendant finality. It is bound by both.\\
+
+\subsection{The Hearings Officer’s Findings Would Withstand Judicial Review}
+
+Even had the City sought timely writ review, judicial scrutiny would have been limited. Courts reviewing quasi-judicial determinations under ORS 34.040(2) do not determine the facts anew. They assess only whether the decision is supported by substantial evidence—evidence upon which a reasonable person could rely. \textit{Younger v. City of Portland}, 305 Or 346, 752 P2d 262 (1988). Reweighing evidence or substituting judgment is not permitted.\\
+\vspace{0.5em}
+
+The Hearings Officer’s findings readily meet that standard. The record includes undisputed testimony that I was present as a passenger in my own vehicle and offered to arrange lawful movement by a licensed driver; a finding that there was no evidence I was verbally aggressive as described in the police report; documentation undermining the asserted basis for the stop; and a finding that there was no evidence I knew the driver lacked a valid license. These findings rest on sworn testimony and the City’s own written submissions.\\
+\vspace{0.5em}
+
+Under even deferential review, the determination would stand. Risk Management’s assertion of “no evidence of negligence” does not—and cannot—displace factual findings made by a quasi-judicial officer applying the governing Code. To assert otherwise inverts the standard of review and substitutes an executive claims assessment for a completed adjudication.\\
+
+\subsection{Issue Preclusion Bars Relitigation of Tow Validity}
+
+Oregon’s doctrine of issue preclusion applies when an issue was actually litigated and decided, was essential to a final decision, the party to be precluded had a full and fair opportunity to be heard, and the same issue is presented again. \textit{Powell v. Witherspoon}, 241 Or App 410, 251 P3d 141 (2011).\\
+\vspace{0.5em}
+
+Each element is satisfied here. The legality of the January 21, 2023 tow under PCC Chapter 16.30 was directly litigated and essential to the Hearings Officer’s order. The City had notice, the opportunity to appear, and the right to present evidence and cross-examine witnesses. It exercised none of those rights. The determination that the tow was “nevertheless unjustified” was necessary to the order relieving me of all charges. That determination is final under PCC §§ 16.30.450(A) and 16.30.530(D) and binding for all subsequent proceedings.\\
+
+\section{Independent Legal Defects}
+\vspace{-0.5em}
+
+The Hearings Officer’s decision fully resolved the administrative tow challenge. This section identifies additional legal defects arising from the same fixed factual record. These points do not reopen, supplement, or invite relitigation of that adjudication. They instead illuminate the posture the City would face in any civil action: defending a deprivation of private property already adjudicated as unjustified under its own Code.\\
+\vspace{0.5em}
+
+In practical terms, the City would enter litigation from a settled starting point—an unjustified seizure—and would then bear the burden of retrofitting legal authority for conduct its own tribunal has already rejected. That posture carries independent legal and institutional consequences.\\
+
+
+
+[A]ny act of dominion wrongfully exerted over the personal property of anotherinconsistent with the owner’s rights thereto constitutes conversion.” (Plummer v.Day/Eisenberg, LLP (2010) 184 Cal.App.4th 38, 50 [108 Cal.Rptr.3d 455].
+
+“[D]amages for emotional distress growing out of a defendant’s conversion ofpersonal property are recoverable.” (Hensley v. San Diego Gas & Electric Co.(2017) 7 Cal.App.5th.1337, 1358 [213 Cal.Rptr.3d 803].
+
+
+“Although damages for conversion are frequently the equivalent to the damagesfor negligence, i.e., specific recovery of the property or damages based on thevalue of the property, negligence is no part of an action for conversion.” (Taylor,supra 235 Cal.App.3d at p. 1123, internal citation omitted.)
+
+. Any noneconomic losses or injuries which the plaintiff has had or will have in the
+future, including (insert recoverable noneconomic losses, e.g., pain and suffering, emotional
+distress, and inconvenience, for which there is sufficient evidence
+
+1. If the jury awards actual damages, the amount should by trebled by the court after the
+jury verdict in the final judgment. § 18-4-405, C.R.S.; Tisch v. Tisch, 2019 COA 41, ¶ 1, 439
+P.3d 89.
+2. Plaintiffs awarded actual or statutory damages are entitled to reasonable attorney’s fees
+in addition to actual or statutory damages, to be awarded by the court after the verdict.
+
+
+Special damages for loss of use are recoverable in a conversion action. Preble et al. v. Hanna, 117 Or. 306, 244 P. 75 (1926); Singer v. Pearson-Page Co., 58 Or. 526, 115 P. 158 (1911).
+
+Noting that not all conversions implicated dishonesty, because an
+actor who mistakenly believed that his or her conduct was legal could still commit conversion, the court found the evidence
+inconclusive as to whether attorney intentionally or knowingly withdrew and applied the funds in violation of his authority. In
+re Peterson, 348 Or. 325, 335, 232 P.3d 940, 946.
+
+Or.App.2011. Cit. and quot. in sup. Rabbit breeder who had pleaded no contest to animal abuse sued county, alleging, among
+other things, that county unlawfully seized her rabbits in connection with the criminal proceedings. The trial court granted
+summary judgment for defendant, finding that all of plaintiff's claims had been decided adversely to her in a prior federal action.
+Reversing and remanding plaintiff's claim for conversion, this court held, inter alia, that, while the district court in the federal
+action determined that county's officers acted with a “reasonable belief” in the lawfulness of their actions, such a determination
+was not, by itself, automatically preclusive of a conversion claim. Scott v. Jackson County, 244 Or.App. 484, 499, 500, 260
+P.3d 744, 752, 753.
+
+
+the word “intentionally” as used in the statute referred to
+committing a tort, rather than causing damage.
