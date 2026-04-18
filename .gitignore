@@ -1,12 +1,12 @@
-*.zip
 
-*.mp4
+# OneDrive/Chrome/OS junk  
 
-*.mp3
-*.wav
-*.mov
-*.avi
-*.mkv
-*.iso
-*.tmp
-desktop.ini
+AppData/
+
+*/AppData/
+*/Extensions/
+*/Google/
+*/User Data/
+*.js *.lnk desktop.ini Thumbs.db
+.DS_Store
+*.zip *.mp4 *.wav *.mov
