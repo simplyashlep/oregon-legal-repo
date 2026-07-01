@@ -1,0 +1,507 @@
+\documentclass[12pt,letterpaper]{extarticle}
+\usepackage{fontspec}
+\usepackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{setspace}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{etoolbox}
+\usepackage{needspace}
+\usepackage{amssymb}
+\usepackage[
+pdftitle={State v. Penn -- Case No. 24CR49043 -- Brady Giglio Violation Notice},
+pdfauthor={Ashle' Penn, Pro Se},
+colorlinks=true,linkcolor=blue!70!black,urlcolor=blue!70!black,
+bookmarks=true,unicode=true
+]{hyperref}
+\usepackage{bookmark}
+\setmainfont{Times New Roman}
+\titleformat{\section}{\normalfont\fontsize{10}{12}\bfseries\centering}
+{\thesection}{1.5em}{}[\vspace{-4pt}]
+\titleformat{\subsection}{\normalfont\fontsize{10}{12}\bfseries\centering
+	\hyphenpenalty=50\tolerance=9999}{\thesubsection}{1.5em}{}[\vspace{-2.5pt}]
+\titlespacing*{\section}{2pt}{6pt}{4pt}
+\titlespacing*{\subsection}{2pt}{4pt}{2pt}
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thesubsection}{\Alph{subsection}}
+\newlength{\PleadingStep}
+\setlength{\PleadingStep}{\dimexpr\textheight/28\relax}
+\makeatletter
+\AtBeginDocument{\setlength{\baselineskip}{\PleadingStep}}
+\makeatother
+\AddToHook{shipout/background}{%
+	\begin{tikzpicture}[remember picture,overlay]
+		\foreach \i in {1,...,28}{
+			\pgfmathsetmacro{\kk}{\i-1}
+			\node[anchor=east,font=\fontsize{10pt}{10pt}\selectfont] at
+			([xshift=0.95in,yshift={-(1in+0.5pt+(\kk+0.5)*\PleadingStep)}]
+			current page.north west) {\i};}
+		\draw[line width=0.65pt]
+		([xshift=0.95in,yshift={-(1in+0.5pt)}]current page.north west)--
+		([xshift=0.95in,yshift={-(1in+0.5pt+\textheight)}]current page.north west);
+		\draw[line width=0.65pt]
+		([xshift=0.975in,yshift={-(1in+0.5pt)}]current page.north west)--
+		([xshift=0.975in,yshift={-(1in+0.5pt+\textheight)}]current page.north west);
+\end{tikzpicture}}
+\setlength{\parindent}{0.5in}
+\setlength{\parskip}{0pt}
+\hyphenpenalty=500\tolerance=2000\emergencystretch=5em\hfuzz=2pt
+\raggedbottom
+\pagestyle{fancy}\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\setlength{\headheight}{13.6pt}
+\fancyfoot[L]{\fontsize{8}{8}\selectfont\textbf{\textsc{%
+			State v.\ Penn --- Case No.\ 24CR49043 --- Brady/Giglio Violation Notice and Demand%
+	}} --- Pg.~\thepage}
+\newcommand{\CaptionBlock}[3]{%
+	\noindent\begin{minipage}[t]{3.20in}\vspace{12pt}%
+		\begin{tikzpicture}
+			\node[inner sep=0pt,text width=3.20in,anchor=north west] (T) {#3};
+			\draw[line width=0.5pt](T.south west)--(T.south east);
+			\draw[line width=0.5pt](T.south east)--(T.north east);
+	\end{tikzpicture}\end{minipage}%
+	\hfill\begin{minipage}[t]{3.05in}\vspace{2pt}%
+		\raggedright Case No.: #1\\[10pt]
+		\raggedleft\small\textbf{#2}\end{minipage}}
+\begin{document}
+	
+	\begin{center}
+		{\fontsize{12}{14}\bfseries\selectfont
+			IN THE CIRCUIT COURT OF THE STATE OF OREGON}\\[4pt]
+		{\fontsize{12}{14}\bfseries\selectfont
+			FOR THE COUNTY OF WASHINGTON}\\[18pt]
+	\end{center}
+	
+	\CaptionBlock{24CR49043}{%
+		BRADY AND GIGLIO VIOLATION NOTICE\\[4pt]
+		AND DEMAND FOR DISCLOSURE\\[8pt]
+		\normalfont\itshape Special Appearance Only;\\
+		Filed on the Papers%
+	}{%
+		{\bfseries STATE OF OREGON,}\\[6pt]
+		\hspace{0.3in} Plaintiff,\\[8pt]
+		v.\\[8pt]
+		{\bfseries ASHLE' ANTOINETTE PENN,}\\[6pt]
+		\hspace{0.3in} Defendant.%
+	}
+	
+	\vspace{18pt}
+	
+	\section{PRELIMINARY STATEMENT}
+	
+	Defendant Ashle' Antoinette Penn appears specially and pro se to provide formal
+	notice of Brady and Giglio violations in the above-captioned matter and to demand
+	immediate disclosure of specific, identified materials. This Notice is filed
+	pursuant to \textit{Brady v.\ Maryland}, 373 U.S.\ 83 (1963); \textit{Giglio v.\
+		United States}, 405 U.S.\ 150 (1972); \textit{Napue v.\ Illinois}, 360 U.S.\ 264
+	(1959); ORS 135.815; and Or.\ Const.\ Art.\ I, \S\S~9, 11.
+	
+	The violations identified herein are not speculative. Each is established by
+	reference to documents already in the State's possession --- in most instances,
+	documents authored by the State's own witnesses or agents. Each item of undisclosed
+	material identified in Section III below is specifically described, its Brady or
+	Giglio significance is stated, and the basis for believing it exists and has not
+	been produced is set forth.
+	
+	Defendant demands production of all items identified in Section III within
+	\textbf{fourteen (14) days} of service of this Notice. Failure to produce shall be
+	raised before this Court as a basis for dismissal with prejudice and shall be
+	preserved as an independent ground for relief on appeal and in any subsequent
+	civil rights proceeding.
+	
+	\section{LEGAL FRAMEWORK}
+	
+	\subsection{The Brady Obligation}
+	
+	The prosecution has an affirmative constitutional duty to disclose all evidence
+	favorable to the accused that is material to guilt or punishment. \textit{Brady v.\
+		Maryland}, 373 U.S.\ 83, 87 (1963). Evidence is material if there is a reasonable
+	probability that its disclosure would have produced a different result. \textit{United
+		States v.\ Bagley}, 473 U.S.\ 667, 682 (1985). The duty attaches to evidence
+	possessed by any member of the prosecution team, including law enforcement.
+	\textit{Kyles v.\ Whitley}, 514 U.S.\ 419, 437 (1995).
+	
+	Under Oregon law, ORS 135.815 requires the State to disclose, upon request, all
+	relevant written or recorded statements of witnesses, all reports of scientific
+	tests, and all evidence known to the district attorney that tends to negate the
+	guilt of the accused or mitigate the offense. This obligation is independent of
+	and in addition to the constitutional Brady requirement.
+	
+	\subsection{The Giglio/Napue Obligation}
+	
+	The prosecution must disclose evidence bearing on the credibility of its own
+	witnesses. \textit{Giglio v.\ United States}, 405 U.S.\ 150, 154 (1972). The
+	prosecution may not present testimony it knows to be false and may not allow false
+	testimony to stand uncorrected. \textit{Napue v.\ Illinois}, 360 U.S.\ 264, 269
+	(1959). A conviction obtained through false testimony violates due process
+	regardless of the prosecution's good faith. \textit{Id.}
+	
+	\subsection{The Continuing Duty}
+	
+	The Brady obligation is continuing. \textit{Strickler v.\ Greene}, 527 U.S.\ 263,
+	280 (1999). The State's obligation to disclose does not cease with indictment. It
+	extends through trial. The State is in violation of that duty at every moment an
+	identified material item remains undisclosed.
+	
+	\section{IDENTIFIED BRADY AND GIGLIO VIOLATIONS}
+	
+	\subsection{Category One: Rambin's December 27, 2024 Supplemental Report and
+		the Misidentification Admission}
+	
+	\textbf{The Material:} Deputy David Rambin (DPSST \#53879) filed a supplemental
+	report on December 27, 2024 in case file GO 50 2024-13459 stating that it was
+	possible Defendant was not the suspect in the September 17, 2024 incident. The
+	same report documents that Rambin returned to Target on December 27, 2024 and
+	directed Target loss prevention to compile all available information on Defendant
+	separately, as though building a new case from scratch.
+	
+	\textbf{Brady Significance:} This report is the arresting officer's own admission
+	that the identification predicate for the September 18, 2024 arrest may have been
+	wrong. It is exculpatory on its face. It directly undermines the probable cause
+	basis for both counts of the January 14, 2025 indictment. A reasonable probability
+	exists that its disclosure before the grand jury proceeding would have produced a
+	different result.
+	
+	\textbf{Status:} This report was not disclosed to Defendant before the January 14,
+	2025 grand jury proceeding. The grand jury convened seventeen days after the report
+	was filed. The State presented the case to the grand jury without disclosing that
+	the arresting officer had placed the identification in doubt. The omission was not
+	inadvertent --- the State excluded from the grand jury presentation the very facts
+	(the September 17 incident and its associated valuation) that Rambin's report
+	placed in question, demonstrating that the State knew of the report and structured
+	the grand jury presentation around it.
+	
+	\textbf{Demand:} Produce the complete December 27, 2024 supplemental report,
+	all attachments, all communications transmitting the report to the DA's office,
+	and all records reflecting the date on which the DA's office received the report.
+	
+	\subsection{Category Two: Body Worn Camera Footage --- September 18, 2024
+		Evidence Pickup at Target (Approximately 7:00 PM)}
+	
+	\textbf{The Material:} Deputy Rambin's body worn camera footage from his
+	approximately 7:00 PM visit to Target on September 18, 2024, during which he
+	retrieved the thumb drive containing September 17 surveillance footage. This is a
+	separate and distinct recording from the arrest BWC footage.
+	
+	\textbf{Brady Significance:} This footage documents the entirety of Rambin's
+	interaction with Target personnel during the evidence pickup. Specifically, it
+	establishes: (a) that Kinley Baker, the LP officer whose name appears in the
+	grand jury testimony, was not present during the evidence pickup; (b) that the
+	thumb drive was retrieved from an unsecured front desk location, not through any
+	chain-of-custody protocol; (c) that Rambin's only communication with Sarah Fillis
+	consisted of a brief exchange from a distance while Fillis was in transit from
+	lunch, lasting a matter of seconds; and (d) that no conversation occurred between
+	Rambin and Fillis containing the detailed description of the September 17 incident
+	that Rambin's probable cause affidavit attributes to Fillis as a verbal statement.
+	
+	The affidavit states: ``When I arrived, Sarah stated that a black female adult had
+	entered the store and after selecting multiple items, left the store through a fire
+	exit without paying for the items on September 17, 2024.'' The BWC footage of
+	that visit, if produced, will establish whether any such conversation occurred.
+	Defendant submits it did not.
+	
+	\textbf{Status:} Not produced in discovery. Its existence is established by
+	WCSO's own BWC template documentation filed in the case. The footage is in the
+	possession of WCSO.
+	
+	\textbf{Demand:} Produce the complete BWC footage from Deputy Rambin's
+	September 18, 2024 visit to Target at approximately 7:00 PM, including all
+	pre-activation buffer footage, and all CAD entries reflecting Rambin's location
+	and activity between approximately 7:00 PM and 9:42 PM (2142hrs) on September 18,
+	2024.
+	
+	\subsection{Category Three: CAD Records Reflecting Rambin's Location and
+		Activity Between the Evidence Pickup and the Arrest}
+	
+	\textbf{The Material:} Computer-Aided Dispatch records for Deputy Rambin
+	(DPSST \#53879) from approximately 7:00 PM through 9:42 PM on September 18, 2024,
+	reflecting his location, status, and documented activity during the approximately
+	two hours and forty minutes between the evidence pickup and the arrest.
+	
+	\textbf{Brady Significance:} The probable cause affidavit implicitly represents
+	that Rambin reviewed the September 17 surveillance footage before arresting
+	Defendant. His own primary follow-up narrative, submitted September 19, 2024,
+	states that he ``was later able to review the security report'' and learned details
+	of the September 17 incident from that review. The question of \textit{when} that
+	review occurred --- before or after the arrest --- is dispositive. If Rambin
+	watched the footage after the arrest, the detailed description of the September 17
+	incident in the affidavit was not derived from pre-arrest knowledge and was
+	attributed to Sarah Fillis falsely.
+	
+	CAD records will establish where Rambin was and what he was doing during the
+	window between the evidence pickup and the arrest. If those records show Rambin
+	drove directly from Target to Bethany Station and began processing Defendant's
+	booking, they establish that the footage review was post-arrest. That determination
+	transforms an inconsistency into a material misstatement in a sworn affidavit.
+	
+	\textbf{Status:} Not produced in discovery.
+	
+	\textbf{Demand:} Produce all CAD entries, status logs, dispatch records, and
+	mobile data terminal records for Deputy Rambin from 6:30 PM through midnight on
+	September 18, 2024.
+	
+	\subsection{Category Four: Communications Between the DA's Office and WCSO
+		Between September 18, 2024 and January 14, 2025}
+	
+	\textbf{The Material:} All written communications --- including emails, text
+	messages, case management system entries, and interoffice memoranda --- between
+	the Washington County District Attorney's office and any member of the Washington
+	County Sheriff's Office regarding case 24CR49043 and/or the investigation of
+	Defendant, from the date of arrest through the date of the grand jury proceeding.
+	
+	\textbf{Brady/Giglio Significance:} These communications will establish: (a) the
+	date on which the DA's office received Rambin's December 27, 2024 supplemental
+	admission; (b) whether any member of the prosecution team discussed the
+	misidentification problem with any member of WCSO prior to the grand jury; (c)
+	whether the decision to exclude the September 17 incident from the grand jury
+	presentation was deliberate and coordinated; and (d) whether any member of the
+	prosecution team knew that Rambin's and Baker's grand jury testimony conflicted
+	with the sworn September 18 affidavit and chose not to correct it.
+	
+	The significance of this category is categorical: if the communications show the
+	DA's office received the December 27 supplemental report before January 14 and
+	proceeded to the grand jury without disclosure, the \textit{Napue} violation is
+	established from the State's own records.
+	
+	\textbf{Status:} Not produced. Not disclosed.
+	
+	\textbf{Demand:} Produce all written communications between the Washington County
+	District Attorney's office and WCSO, including Deputy Rambin, regarding case
+	24CR49043, Defendant Ashle' Penn, and/or the September 18, 2024 arrest, from
+	September 18, 2024 through January 14, 2025.
+	
+	\subsection{Category Five: The Grand Jury Transcript}
+	
+	\textbf{The Material:} The complete transcript of the January 14, 2025 grand jury
+	proceeding in case 24CR49043, including the testimony of Deputy David Rambin and
+	Kinley Baker, all exhibits admitted, and all statements by the prosecutor to the
+	grand jury.
+	
+	\textbf{Brady/Giglio/Napue Significance:} The transcript is necessary to establish
+	the \textit{Napue} violation on the record. The demurrer filed April 28, 2025
+	identifies a specific, documentable conflict: Rambin's September 18, 2024
+	affidavit attributes the initial tip to Sarah Fillis contacting Deputy Orozco.
+	Baker's grand jury testimony attributes the initial contact to Baker contacting
+	Rambin directly. These accounts are mutually exclusive on a material fact. The
+	prosecutor had the affidavit in the case file. The transcript will establish
+	whether the prosecutor corrected Baker's testimony, presented the conflict to the
+	grand jury, or allowed it to stand without correction.
+	
+	Additionally, the transcript will establish whether the grand jury was told: (a)
+	that Rambin's supplemental report admitted possible misidentification; (b) that the
+	September 17 facts were being excluded because of that admission; and (c) that the
+	investigation of the September 18 conduct was initiated by a warrantless arrest
+	whose probable cause basis had been placed in doubt by the arresting officer
+	himself.
+	
+	\textbf{Standard for Disclosure:} Grand jury secrecy under ORS 132.210 yields to
+	defendant's particularized need for the transcript when the defendant makes a
+	showing that the testimony is likely to conflict with a sworn instrument in the
+	State's file and that the conflict is material to a pending constitutional
+	challenge. \textit{State v.\ Farber}, 314 Or.\ 397 (1992). That showing is made
+	here. The conflict between the affidavit and Baker's testimony is identified
+	specifically. The pending demurrer and motion to dismiss are the proceedings for
+	which the transcript is needed. The standard is satisfied.
+	
+	\textbf{Demand:} Produce the complete January 14, 2025 grand jury transcript,
+	or, in the alternative, submit it to the Court for in camera review with a
+	proposed order directing production of the portions reflecting the testimony
+	of Rambin and Baker and all prosecutor statements regarding the probable cause
+	basis for the charges.
+	
+	\subsection{Category Six: The Original Email from Sheila Clark to Judge Thompson
+		and All Related Communications}
+	
+	\textbf{The Material:} The complete text of the email sent by Sheila Clark,
+	P\&P Services Supervisor at Washington County Community Justice, to the Honorable
+	Brandon Thompson, on or about June 10, 2025, regarding Defendant, including all
+	prior correspondence in the same thread, all attachments, and all subsequent
+	communications between Judge Thompson and any member of Washington County Community
+	Justice or the Washington County Circuit Court Pretrial Release Office regarding
+	Defendant.
+	
+	\textbf{Brady Significance:} The Stiefer email chain already in the record
+	establishes that Clark sent an email to Thompson and that Thompson forwarded it to
+	the Pretrial Release Office and directed show cause proceedings. The content of
+	Clark's original email is unknown. That content is material because: (a) it is the
+	initiating instrument for a proceeding that resulted in an arrest warrant; (b) it
+	reflects what Clark actually knew or believed at the time she contacted the judge,
+	before any investigation had been conducted; (c) it may reveal the source of
+	Clark's information about Defendant's release conditions; and (d) it goes directly
+	to whether the show cause proceeding was initiated on a factual basis or on
+	institutional animus against Defendant arising from her advocacy on behalf of the
+	co-defendant in his supervision proceedings.
+	
+	\textbf{Status:} Never produced. Never disclosed. The email exists in Thompson's
+	account, Clark's account, and potentially in the pretrial release office's records.
+	Its non-production while the proceeding it initiated was being conducted against
+	Defendant is itself a Brady violation.
+	
+	\textbf{Demand:} Produce the complete text of all communications between Sheila
+	Clark and Judge Brandon Thompson regarding Defendant Ashle' Penn, including the
+	email Clark sent to Thompson on or about June 10, 2025, all prior communications
+	in the same thread, all forwarded copies, and all communications between Thompson's
+	chambers and the Washington County Circuit Court Pretrial Release Office regarding
+	Defendant, from January 1, 2025 through the date of this Notice.
+	
+	\subsection{Category Seven: All Records Reflecting How Clark Obtained Information
+		About Defendant's Release Conditions}
+	
+	\textbf{The Material:} All records --- including case management system entries,
+	inter-agency communications, shared database access logs, and written reports ---
+	reflecting how Sheila Clark or any member of Washington County Community Justice
+	obtained information about Defendant's release conditions in case 24CR49043 prior
+	to June 10, 2025.
+	
+	\textbf{Brady Significance:} Clark's agency supervised the co-defendant in a
+	separate matter. Defendant's release agreement is a document in her criminal case
+	file. The mechanism by which Clark obtained information about Defendant's release
+	conditions is material to whether that information was obtained through proper
+	channels or through unauthorized access to Defendant's case file, and to whether
+	the show cause proceeding was initiated on the basis of legitimate compliance
+	information or on information gathered and used outside the scope of Clark's
+	supervisory authority.
+	
+	\textbf{Demand:} Produce all records reflecting how Washington County Community
+	Justice personnel obtained knowledge of Defendant's release conditions, including
+	any inter-agency information sharing agreements, shared database access logs for
+	Defendant's case file, and written communications between Washington County
+	Community Justice and Washington County Circuit Court personnel regarding Defendant
+	prior to June 10, 2025.
+	
+	\subsection{Category Eight: Target Surveillance Footage --- September 17, 2024}
+	
+	\textbf{The Material:} All surveillance footage from the Target store at 12675 NW
+	Cornell Road, Portland, Oregon, from September 17, 2024, including footage of the
+	person identified by loss prevention as having exited through a fire door without
+	paying for merchandise.
+	
+	\textbf{Brady Significance:} The September 17 surveillance footage is the
+	foundational document of this prosecution. The September 18, 2024 probable cause
+	affidavit attributes to Defendant conduct that occurred on September 17. Rambin's
+	December 27, 2024 supplemental report acknowledges a possible misidentification ---
+	and the most direct evidence bearing on that misidentification is the footage of
+	the actual September 17 suspect. That footage will either corroborate or refute the
+	identification. If the September 17 footage shows a person whose physical
+	characteristics differ materially from Defendant's, the misidentification is
+	established visually. That is exculpatory evidence of the highest order.
+	
+	\textbf{Status:} Not produced. The thumb drive Rambin retrieved on September 18,
+	2024 reportedly contained this footage. The chain of custody of that thumb drive ---
+	retrieved from an unsecured desk, confirmed from a distance by Fillis, without
+	Baker present --- is itself a matter of record. The footage and the chain of custody
+	records must both be produced.
+	
+	\textbf{Demand:} Produce all surveillance footage from Target at 12675 NW Cornell
+	Road from September 17, 2024, all chain of custody documentation for the thumb
+	drive retrieved by Rambin on September 18, 2024, and all records reflecting the
+	disposition of that footage.
+	
+	\subsection{Category Nine: The Barry Washington Trial Transcript, Pages 184--186}
+	
+	\textbf{The Material:} Pages 184 through 186 of the trial transcript in the matter
+	of \textit{State v.\ Barry Washington}, Washington County Circuit Court case
+	24CR49041, reflecting the testimony of Sarah Fillis.
+	
+	\textbf{Brady/Giglio Significance:} Sarah Fillis is identified in Rambin's
+	September 18, 2024 probable cause affidavit as the source of the identification
+	that led to Defendant's arrest. At the Washington trial, Fillis testified in a
+	manner that contradicts the affidavit's account of her communications with law
+	enforcement. Specifically, Fillis's testimony at pages 184--186 of the Washington
+	trial transcript addresses who she identified to deputies and in what terms.
+	That testimony is exculpatory because it directly contradicts the sworn instrument
+	that forms the basis for this prosecution. It is Giglio material because it
+	impeaches the foundational reliability of Rambin's affidavit. It triggers a
+	continuing Brady disclosure obligation because it became available to the State at
+	the moment Fillis testified under oath in a related case in the same courthouse.
+	
+	\textbf{Status:} Not produced. The State was present at the Washington trial. The
+	continuing Brady obligation attached at the moment Fillis testified. The obligation
+	has not been discharged.
+	
+	\textbf{Demand:} Produce pages 184 through 186 of the \textit{State v.\ Barry
+		Washington} trial transcript, case 24CR49041, reflecting the testimony of Sarah
+	Fillis, and all notes, memoranda, or summaries of that testimony in the possession
+	of any member of the prosecution team.
+	
+	\section{NOTICE OF CONSEQUENCES OF NON-COMPLIANCE}
+	
+	The items demanded in Section III are not marginal or peripheral. Each is either:
+	(a) a document authored by the State's own witness that contradicts a sworn
+	instrument in the State's file; (b) a recording that will establish the factual
+	basis --- or the absence of a factual basis --- for representations made in that
+	sworn instrument; or (c) communications between government actors that will
+	establish what the prosecution knew and when.
+	
+	The State's failure to produce these materials within fourteen days of this Notice
+	will be presented to this Court as: (1) an independent basis for dismissal with
+	prejudice under \textit{Brady}, ORS 135.815, and Or.\ Const.\ Art.\ I, \S~11;
+	(2) an aggravating factor in support of the pending motion to dismiss for
+	prosecutorial misconduct; and (3) grounds for an adverse inference instruction
+	should the case proceed to trial.
+	
+	Defendant further places the State on notice that the non-disclosure of these
+	materials has already caused prejudice. The January 14, 2025 grand jury proceeded
+	without knowing what the December 27, 2024 supplemental report said. The demurrer
+	has been pending for fourteen months in part because the materials needed to fully
+	develop the constitutional challenge remain in the State's exclusive possession.
+	Every day of continued non-disclosure extends the prejudice.
+	
+	\section{REQUEST FOR JUDICIAL RELIEF}
+	
+	Defendant respectfully requests that this Court:
+	
+	\begin{enumerate}[leftmargin=0.5in, label=\arabic*., itemsep=4pt]
+		
+		\item Take judicial notice of this Notice and Demand and enter it in the record
+		of case 24CR49043.
+		
+		\item Order the State to produce all materials identified in Section III within
+		fourteen (14) days of this Court's order.
+		
+		\item Order the State to submit to the Court, within fourteen (14) days, a written
+		declaration identifying any item listed in Section III that the State contends does
+		not exist, has been destroyed, or is not in the prosecution team's possession,
+		with a statement of when and how each such item was lost or destroyed.
+		
+		\item Set a status conference within thirty (30) days to address compliance with
+		this Order and to schedule argument on the pending demurrer and the motions
+		identified in Defendant's concurrently filed Notice of Appearance.
+		
+	\end{enumerate}
+	
+	\vspace{24pt}
+	\noindent\hspace{0.5in}Respectfully submitted,
+	
+	\vspace{48pt}
+	\noindent\hspace{0.5in}\rule{2.5in}{0.4pt}\\[4pt]
+	\noindent\hspace{0.5in}Ashle' Antoinette Penn\\
+	\noindent\hspace{0.5in}Defendant, Pro Se\\[6pt]
+	\noindent\hspace{0.5in}Dated: \today\\[6pt]
+	\noindent\hspace{0.5in}\textit{Address:} \underline{\hspace{2.2in}}\\[4pt]
+	\noindent\hspace{0.5in}\textit{Phone:} \underline{\hspace{2.2in}}\\[4pt]
+	\noindent\hspace{0.5in}\textit{Email:} \underline{\hspace{2.2in}}
+	
+	\newpage
+	\begin{center}{\fontsize{11}{13}\bfseries\selectfont CERTIFICATE OF SERVICE}
+	\end{center}
+	\vspace{12pt}
+	I, Ashle' Antoinette Penn, certify that on \today\ I served a true and correct
+	copy of the foregoing \textit{Brady and Giglio Violation Notice and Demand for
+		Disclosure} upon the Washington County District Attorney's Office,
+	150 N.\ First Avenue, Suite 300, Hillsboro, Oregon 97124, by the method indicated:
+	\vspace{12pt}
+	\noindent\hspace{0.5in}$\square$\ \ Electronic Filing (eFiling)
+	\hspace{0.8in}
+	$\square$\ \ U.S.\ Mail, First Class
+	\vspace{36pt}
+	\noindent\hspace{0.5in}\rule{2.5in}{0.4pt}\\[4pt]
+	\noindent\hspace{0.5in}Ashle' Antoinette Penn
+	
+\end{document}
