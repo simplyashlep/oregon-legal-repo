@@ -1,0 +1,83 @@
+% Penn -> TransUnion (CRA reinvestigation, FCRA 1681i)
+% NOTE: TransUnion identifies these accounts by PREFIX, not last-4 suffix.
+% Compile with XeLaTeX. Requires studentloan_core.tex and exhibit PDFs in the same folder.
+\documentclass[12pt,letterpaper]{article}
+\usepackage[left=1.25in,right=1.25in,top=1in,bottom=1in]{geometry}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{pdfpages}
+\titleformat{\subsection}{\normalfont\bfseries\scshape}{\thesubsection}{1em}{}
+\begin{document}
+
+\begin{center}
+  \textbf{VIA CFPB PORTAL --- WRITTEN RECORD PRESERVED} \\
+  \textbf{Date:} \underline{\today}
+\end{center}
+
+\begin{tabular}{@{}ll}
+  \textbf{To:}   & TransUnion Consumer Solutions \\
+                 & P.O. Box 2000, Chester, PA 19016 \\
+                 & \\
+  \textbf{From:} & Ash Le' A. Penn \\
+                 & 17548 NW Springville Rd \#9, Portland, OR 97229 \\
+\end{tabular}
+
+\vspace{1em}\hrule\vspace{1em}
+
+\textbf{Consumer:} Ash Le' A. Penn \quad \textbf{SSN:} XXX-XX-7755 \quad \textbf{DOB:} 02/15/1988 \\
+\textbf{TransUnion File No.:} [insert] \quad (evidence report: Equifax Conf.\ 6060535900, 03/01/2026) \\
+\textbf{Re:} \textbf{Official FCRA Dispute and Reinvestigation Demand (15 U.S.C. \S~1681i)}
+
+\vspace{1em}
+\textbf{Attached Exhibits:} (1) Driver's License \& Utility Bill; (2) Equifax report 09/24/2024; (3) TransUnion report 03/01/2026; (4) copy of this dispute.
+
+\vspace{1em}\hrule\vspace{1em}
+
+To Whom It May Concern:
+
+This is an official dispute and demand for reasonable reinvestigation under 15 U.S.C.\ \S~1681i. TransUnion must also assure maximum possible accuracy under \S~1681e(b).
+
+\subsection*{Obsolete Tradelines Past TransUnion's Own Printed Removal Dates}
+On the Consumer's TransUnion report, TransUnion prints the notice ``Estimated month and year this item will be removed: 08/2023'' on the following student-loan tradelines (identified by TransUnion's prefix format):
+\begin{itemize}[noitemsep]
+  \item Prefix *43029 (opened 10/23/2013) --- printed removal 08/2023
+  \item Prefix *47032 (opened 10/01/2014) --- printed removal 08/2023
+  \item Prefix *49033 (opened 09/30/2015) --- printed removal 08/2023
+  \item Prefix *51147 (opened 09/22/2016) --- printed removal 08/2023
+\end{itemize}
+By TransUnion's own printed dates these items should have been removed in August 2023, yet they continue to report in 2026 --- an independent \S~1681c violation regardless of the DOFD analysis below. The remaining accounts (prefix *55166, opened 09/26/2017) carry a false 10/2031 removal date derived from the re-aged 2024 DOFD.
+
+\input{studentloan_core.tex}
+
+\subsection*{Additional Tradelines Disputed}
+\begin{itemize}[noitemsep]
+  \item \textbf{Oregon Credit Systems *1645 (orig.\ GMC Properties Corp).} Balance inflated \$15,632 $\rightarrow$ \$20,508 and unvalidated. Validate and correct, or delete.
+  \item \textbf{Steel Lending Group *3419.} Deficiency barred under Oregon UCC Article 9; \$13,635 balance inaccurate. Correct or delete.
+  \item \textbf{Exeter Finance *1001.} Active \$19,095 balance on a debt sold to Midland Credit (\$16,103). Correct to \$0/sold or delete.
+  \item \textbf{Eastern Account System *7892 (orig.\ Comcast).} \$162 actively disputed, not marked disputed. Mark disputed or delete.
+\end{itemize}
+
+\subsection*{Demands}
+\begin{enumerate}[label=\arabic*., leftmargin=*]
+  \item Delete the student-loan tradelines that are past TransUnion's own printed 08/2023 removal date.
+  \item Reinvestigate the remaining student-loan tradelines and require the furnisher to substantiate the DOFD it reports; absent substantiation, delete as inaccurate and obsolete under \S~1681c(a).
+  \item Delete any Default Resolution Group collection tradeline that does not map to an originating loan (ten reported vs.\ nine loans).
+  \item Correct or delete the four collection tradelines above.
+  \item If any item is ``verified,'' provide the method of verification (\S~1681i(a)(7)).
+  \item \textbf{TransUnion} must respond in writing within 30 days.
+\end{enumerate}
+
+\vspace{1.5em}\noindent Respectfully, \\ \vspace{1em}
+\noindent \includegraphics[width=2.5in]{signature.jpg} \\
+\textbf{Ash Le' A. Penn}
+
+\newpage \includepdf[pages=-]{ID.png}
+\newpage \includepdf[pages=-]{Proof_of_Address.pdf}
+\newpage \includepdf[pages=-]{EQUIFAX_9.24.24.pdf}
+\newpage \includepdf[pages=-]{TransUnion Credit Report.pdf}
+\end{document}
