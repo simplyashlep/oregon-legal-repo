@@ -1,0 +1,553 @@
+Citation verification
+DHS v. J. B. V. — confirmed, and stronger than your draft uses it
+262 Or App 745, 327 P3d 564 (2014) is correct as cited.
+
+You are underusing it. The opinion hands you a verified four-link chain you should quote directly:
+
+The OEC applies by default. J.B.V. quotes OEC 101(1): "The Oregon Evidence Code applies to all courts in this state except for: [inapplicable exceptions]." 262 Or App at 748 n 2.
+The jurisdictional standard requires competent evidence. ORS 419B.310(3): facts showing the child within jurisdiction "must be established by a preponderance of competent evidence." Quoted at 751.
+"Competent" is defined by the OEC. Quoting State ex rel Children's Services Div. v. Page, 66 Or App 535, 538, 674 P2d 1196 (1984): "Evidence is 'competent' when it is relevant, material and admissible [. *** T]he juvenile court's rulings thereon are governed by the Oregon Evidence Code." At 751 n 3.
+"Adjudicatory phase" means the jurisdictional determination. The 1981 OEC Commentary: "The Legislative Assembly believes that the Code should apply in the adjudicatory phase of a juvenile court proceeding, whether for delinquency or dependency." And State ex rel Juv. Dept. v. Reding, 23 Or App 413, 416, 542 P2d 934 (1975): the first determination is "whether facts produced under the rules of evidence justify the court's taking jurisdiction of the child." At 755–56.
+Also quote this line — it is written for your case:
+
+"In view of the important interests at stake, the legislature has imposed a significant evidentiary threshold that those who would seek to make a child a ward of the court must cross by using only competent evidence."
+
+262 Or App at 752.
+
+The adverse half of J.B.V. you must account for
+J.B.V. held that ORS 419B.325(2) DOES apply at permanency hearings — including to the "reasonable efforts" and "sufficient progress" determinations under ORS 419B.476(2)(a). At 753–57. You have a June 29, 2026 Permanency Judgment in this record. Relaxed evidentiary rules govern there.
+
+Your draft currently says the relaxation is "strictly reserved for the dispositional phase." That is close but will be picked apart, because J.B.V. expressly rejected the father's attempt to carve a permanency hearing into adjudicative and dispositional phases. Rewrite as: the relaxation does not reach jurisdictional determinations, whether initial or on a motion to dismiss. That is precisely what the case holds and it is all you need.
+
+Two cites in Part 1 I could not verify
+ORS 419B.185(1)(g) for relaxed shelter-hearing evidence. J.B.V. does not address shelter hearings. Read the statute before asserting this — you are conceding a point to the agency, so be certain the concession is legally required.
+"ORS 40.315" and "OEC 602" — you cite both, in different paragraphs, for the personal-knowledge rule. They cannot both be right. Verify which ORS section codifies OEC 602 and use one consistently.
+
+ \recip takes two arguments; you pass three. Every call passes three:
+
+The third group will dump as stray body text after each name. Replace the definition?  
+
+\newcommand{\recip}[362](https://us-shard-q.docs-pipeline.filevineapp.com/api/documents/50328163-aefb-5b25-bee7-c2650fa992a4/full-proof){%
+ \textbf{#1}%
+ \ifx\relax#2\relax\else\\[1pt]{\scriptsize\itshape #2}\fi
+ \ifx\relax#3\relax\else\\[1pt]{\scriptsize\ttfamily #3}\fi
+ \par\medskip}
+
+\textvf does not exist. Line reads:
+
+\textvf{Marquand had no firsthand knowledge of any operative fact; ...}
+
+\exfig is defined twice. First \newcommand{\exfig}[363](https://us-shard-q.docs-pipeline.filevineapp.com/api/documents/50328163-aefb-5b25-bee7-c2650fa992a4/full-proof), then \renewcommand{\exfig}[362](https://us-shard-q.docs-pipeline.filevineapp.com/api/documents/50328163-aefb-5b25-bee7-c2650fa992a4/full-proof). The three-arg version wins and matches your calls, so it compiles — but delete the dead four-arg definition to avoid confusion later.
+
+4. \usepackage{fancyhdr} — verify the spelling in your actual file. It must be fancyhdr. If it reads fancyhdrs or similar it will fail to load.
+
+5. Unused packages — longtable, rotating. Harmless, but if you are not using them, drop them.
+
+6. \faEnvelope / \faPhone — these need fontawesome. moderncv usually pulls it, but confirm it compiles clean, since these appear in the header block where a failure is immediately visible.
+
+Issue	Location	Fix
+"Exhibits A through S" vs "Exhibits A through P"	Header vs. RE: block	You have 19 items = A–S. Fix the RE: block.
+Exhibit Q dangling	"as directed by the court in case "	Fill in the case number or delete the clause.
+"Al-Quan" / "Alquan" / "AlQuan"	Throughout	Pick one. Records use "Alquan."
+"Amaiya"	Figure caption	Other records say "Amayia." Verify.
+"involvment" (×2), "encumbant", "considered" (should be "considering"), "direcly", "serive"	Various	Proof pass.
+CRB hearing "is tomorrow"	Section 2 close	This will go stale. Use the actual date.
+Section 1 must go, or be rebuilt
+I flagged the ORS 419B.118 theory last turn and it is now your Section 1 — the most prominent position in the document — and it is stated as a conclusion: "Washington County's subsequent orders are void ab initio."
+
+Three problems, unchanged:
+
+The record does not support the premise. The only document is your own January 7, 2025 email to the Multnomah LRC in case 20DR03011 — Alquan Adam Davis vs. Ashle Penn, saying "I communicate this email proactively so that Multnomah County is aware that this matter has been transferred back to the originating county." That is your assertion, not a court's. There is no Washington County order declining jurisdiction anywhere in the uploaded record.
+20DR03011 is a domestic relations case. A DR custody matter and a juvenile dependency proceeding are separate tracks. A pending DR case in another county does not divest a juvenile court of dependency jurisdiction under ORS 419B.100. Opposing counsel disposes of this in one sentence.
+I still cannot verify ORS 419B.118 says what you attribute to it. I searched Oregon Supreme Court and Court of Appeals authority again and found no case construing it as creating exclusive inter-county jurisdiction that voids another county's orders.
+What to put in the Section 1 slot instead: service. You have Judge Michelle Rini, on the record October 14, 2025: "Okay, so I'll note that mom still has not been served." AAD Wadia: "That is correct, Your Honor." ORS 419B.815(1): a court may establish jurisdiction "only after service of summons." Shelter hearing September 8. Jurisdictional trial October 31. That is unanswerable, it is the court's own words, and it is what defeats the S. C. T. default rule — because 419B.815(7)–(8) operates only on a person directed "by summons or court order," and you were never served with one.
+
+Move the January 2025 facts into a state-inflicted-harm section, framed as sequence rather than jurisdiction, and only once you have produced the actual Washington County document.
+
+Section 2 — right argument, three structural problems
+Redundancy. You make the "no ODHS employee swore" point three separate times: the opening paragraph, again mid-subsection, again in the \textvf paragraph. Your own drafting standard has a Redundancy Test. State it once, at the top, and then never restate it.
+
+Missing the S. C. T. problem. Your Marquand personal-knowledge and hearsay arguments assume objections should have been sustained. Under DHS v. S. C. T., 281 Or App 246, 380 P3d 1211 (2016), a parent absent contrary to court order cannot interpose objections through counsel at all. You must address this head-on or the agency raises it and your evidence section collapses. The answer is service: no summons, no order to appear, no default, S. C. T. inapplicable. Put that sentence inside Section 2, not just in Section 1.
+
+One addition worth making. Under State ex rel Juv. Dept. v. Cowens, 143 Or App 68, 922 P2d 1258, rev den, 324 Or 395 (1996), and its progeny, a child's out-of-court statements offered by DHS come in as non-hearsay party admissions under OEC 801(4)(b)(A). Almira's recantation was admissible on the identical theory. Its absence from the record was a choice, not an evidentiary constraint. One sentence, and it converts the recantation from a dispute into a concealment.
+
+Federal citations — all five need validation
+Wallis v. Spencer, 202 F.3d 1126, 1136. Beltran, 514 F.3d 906, 908. Devereaux, 263 F.3d 1070, 1074–75. Costanich, 627 F.3d 1101, 1108. Spencer v. Krause, 857 F.3d 789 (no pin cite). Corales v. Bennett, 567 F.3d 554, 570.
+
+I have not validated any of these. They came from your prior filings.
+
+One is a doctrinal risk. Your Corales proposition — that a supervisor is liable if she "knew of the violations of subordinates and failed to act to prevent them" — is a formulation that post-Ashcroft v. Iqbal supervisory-liability doctrine has narrowed considerably. There is no respondeat superior under § 1983, and the current standard generally requires personal participation or a causal connection, not mere knowledge plus inaction. Verify the current Ninth Circuit standard before you put that sentence in front of the Attorney General's office. The notice function of your letter still works regardless — you are creating a record that Faulkner knows. Just do not overstate the legal consequence.
+
+Also add a pin cite to Spencer v. Krause.
+
+Figure captions are doing argument's job
+The AshLeSafeParenting.png caption is a full paragraph of legal argument — Judge Pagan's no-physical-discipline order, the agency's inconsistency about father, your custody-modification intent. That belongs in body text. Captions identify the exhibit and its source; they do not argue.
+
+Typeset at \footnotesize inside a centered figure, a 150-word caption will look like a footnote swallowed the page. Move the substance up into the section, leave the caption as one identifying sentence plus source.
+
+Same for ContradictionTooGood3 and ContradictionTooGood4. The Ponting shelter-letter contradiction is one of your best documentary items — April 16/20, 2020 FDM notes showing you pursued the shelter resource and were told you were ineligible, then an April 21, 2020 letter to the court saying you thought you were "too good" for a shelter. That deserves numbered treatment in the fabrication record, not a caption.
+
+Tone — one line to cut
+"Parroting the court's current posture is unacceptable especially considered the number of falsehoods, fabrications and omissions the agency has endorsed..."
+
+You have told me you want Faulkner to do the heavy lifting on walking this back. That sentence makes her defensive and it does no work the surrounding facts don't already do. Your strongest passage is the one right after it — "your own words cannot both be true" — and it lands harder without the insult in front of it.
+
+Consider moving the "your own words cannot both be true" paragraph much earlier. It is the best writing in the document and it should not be on page four.
+
+
+
+Citation validation: 13 of 14 valid, 1 suspect
+Valid, case name confirmed
+Cite	Case	Filed
+307 Or App 254	DHS v. L. E. F.	2020-10-14
+315 Or App 160	DHS v. T. N. M.	2021-10-13
+277 Or App 37	DHS v. R. W.	2016-03-16
+308 Or 159	State ex rel Juv. Dept. v. Lauffenberger (Or Sup Ct)	1989-07-13
+236 Or App 436	DHS v. C. Z.	2010-07-28
+276 Or App 276	DHS v. A. W.	2016-02-03
+259 Or App 116	DHS v. S. D. I.	2013-10-23
+258 Or App 57	DHS v. C. J. T.	2013-08-14
+268 Or App 391	DHS v. A. L.	2015-01-07
+530 U.S. 57	Troxel v. Granville	2000-06-05
+262 Or App 745 / 327 P3d 564	DHS v. J. B. V.	2014-05-14
+SUSPECT — fix or delete
+"rev den, 367 Or 559 (2021)" attached to L. E. F. — flagged suspect. The validator could only match page 559 by page range to a case beginning at 367 Or 537, which is Bank of New York Mellon Trust Co. v. Sulejmanagic (S067155, decided 2021-02-11). That is not a review denial in L. E. F.
+
+Either find the correct review-denial citation or strike the rev den parenthetical entirely. L. E. F. stands fine without it. A bad rev den cite in a letter copied to the Attorney General is exactly the error opposing counsel will lead with.
+
+Pin-cite error
+A. F. begins at 243 Or App 379, not 387. Your cite presents 387 as the first page. Correct to:
+
+Dept. of Human Services v. A. F., 243 Or App 379, 387, 259 P3d 957 (2011)
+
+Two citation-form problems
+C. J. T. short form precedes full form. You use "C.J.T., 258 Or.App. at 61–62" in the second paragraph, then give the full citation later. Full cite must come first.
+
+T. N. M. is a bare citation. "DHS v. TNM, 315 Or App 160" — no year, no parallel cite, no pin cite, no proposition attached. It sits after L. E. F. doing nothing. Either develop it with a pin cite and a stated holding, or cut it.
+
+One case that needs a currency check before you use it
+Lauffenberger validates as a real 1989 Oregon Supreme Court decision. But it was decided under the former juvenile code — ORS chapter 419B was created by Or Laws 1993 c.546, four years later. The proposition you draw from it ("compelling circumstances for removal rather than best interest of child") is strong, and precisely because it is strong I would not put it in front of an AAG without confirming it survived the 1993 rewrite. Run its subsequent history, and pair it with a post-1993 case stating the same rule. If nothing modern says it, that tells you something.
+
+Date conflict — your own filings disagree, and the agency will find it
+I searched the record for when ODHS moved to lift the no-contact order. Your documents give three different dates:
+
+NOTICE_OF_TORT_CLAIM p.3: "In April 2024, A.D.'s father, Alquan Davis, was arraigned and taken into custody temporarily."
+DISTRICT_COURT_1983 p.5, section heading: "B. 2024 — DHS Restores Father's Contact"
+Sonya_Faulkner_Current p.24: "In April 2024, an ODHS worker transported A.D. from grand jury proceedings directly to Mother's home."
+Sonya_Faulkner_Current p.23 (newer version): "In April 2025, it was ODHS that actively moved to lift the no-contact order."
+Part 2 figure caption you just sent: "prior to removing the no contact order after Father's initial arrest in May 2025."
+And the causation phrasing depends on which is true. Your p.7 text says ODHS moved to remove the order and " [a]pproximately five months later, on September 6, 2025, Father was arrested." Five months before September 2025 is April 2025. Seventeen months before is April 2024.
+
+You cannot file this until the date is pinned to a document. Your federal complaint and tort claim notice both say 2024; your letter says 2025 in the place where the causation argument lives. Pull the actual order lifting no-contact and the arraignment record. Then conform every filing to it. The "State reintroduced the danger" argument is one of your best and it dies on a date discrepancy.
+
+
+1. Unclosed brace in the Figure 1 block.
+
+latex
+ 
+{\footnotesize\textbf{Figure 1.}
+ \begin{quote}
+ Reasonable efforts have \textbf{not} been made...
+ \end{quote}
+\end{minipage}
+
+The { before \footnotesize never closes. Add } before \end{minipage}.
+
+2. \figbox with a spaced PDF filename.
+
+latex
+ 
+\figbox{1.35\textwidth}{2025-09-08 - ODHS Fact Findings Report.pdf}
+Three problems: spaces in the filename break \includegraphics unless doubly braced; this is a multi-page PDF so you will get page 1 only, not the passage you want; and 1.35\textwidth inside a 0.41\textwidth minipage will overflow the page. Crop the passage to a PNG and reference that.
+
+3. Stray closing brace.
+
+latex
+ 
+...unable to leave immediately.}\\[10pt]}
+\end{center}
+Delete the final }.
+
+4. Stray pipe character.
+
+latex
+ 
+\footnote{See 2025-09-08 Protective Custody Report, pp.~4--5}|
+Delete the |.
+
+5. Nested center around \exfig. \exfig already opens its own center. Wrapping it in another one adds spurious vertical space and can throw errors. Remove the outer \begin{center}...\end{center}.
+
+6. Footnote inside an \exfig caption.
+
+latex
+ 
+\exfig{0.8\textwidth}{EngagedInCounseling.png}{ODHS's own note ...\footnote{{\textit{(Source: ...)}}}}}
+Three problems: footnotes misbehave inside your \exfig construction because it is not a real float; the nested {{ }} are unnecessary; and you have one closing brace too many. Put the source inline in the caption text as you do elsewhere.
+
+7. Duplicate figure. BEFORERemoval.png appears twice, with two different captions, a few lines apart. Delete one — keep the second caption, it is the better one.
+
+Typos
+ope atement → opening statement · RischiStto → Rischiotto (still there, in a footnote) · reasonablee → reasonable · madee → made · depsite → despite · recieved → received · efficate → pick a real word · ~he false statement→ stray backtick, should read "the false statement" ·308P.3d 307→ add space ·*231→ stray page artifact from a database copy-paste, delete ·A.F}, 243...(2011)..→ double period ·procedural failure A. The State` → missing sentence break
+
+2. Wadia/Rischiotto inconsistency persists
+Your heading now correctly says Rischiotto. Two paragraphs later: "AAG Wadia did not tell the court efforts were excused. She told the court efforts were made." At the September 8 shelter hearing it was Rischiotto. Wadia made the statement at the October 31 trial. Fix the pronouns and the name.
+
+3. ORS 419B.118 — third time
+It is still here, now inside the state-harm section as "Unlawful Assumption of Jurisdiction," still asserting Washington County's orders are void. Unverified statute, unsupported premise, conflates a DR case with dependency jurisdiction. Cut the legal conclusion. Keep the sequence as fact.
+
+4. ORS 419B.340(5) still unverified
+You list the aggravated-circumstances grounds — aggravated abuse, prior TPR, murder or manslaughter of another child, felony assault causing serious bodily injury. I have not verified that subsection number or that list. Read the statute before this goes out. Same for ORS 419B.185(1)(g) from Part 1.
+
+5. Redundant case string
+The burden-of-proof chain (L. E. F., A. W., S. D. I., C. J. T., A. L.) appears in full at the top of Part 2, then a compressed version reappears in the "Cannot Assess" section. State the standard once with full cites; use short forms thereafter.
+
+6. Unsupported claim in an otherwise well-cited section
+"For years your agency has had countless opportunities to assess my ability to mother my children and consistently stated that I am an efficate mother."
+
+Which document says that? Every other assertion in this section carries a record cite. This one needs one or it should go.
+
+7. Your best paragraph is missing its proof
+This is excellent:
+
+"An assertion of Fourth Amendment rights is legally neutral. It is the absence of evidence, not evidence of risk."
+
+But it stands alone. Attach the Safety Plan record — the comparison is what makes it unanswerable:
+
+Criterion	Mr. Davis (charged with assault, No Contact Order)	Ms. Penn (no charges)
+Home like setting	Met	Not Met
+Willing to cooperate	Met	Not Met
+Safety services available	Met	Not Met
+Plus the plan's own concession: "While the assessment is still ongoing, Ms. Penn has not been cooperative in that process so it is challenging to determine if Al Mira would be exposed to violence and at risk if she were to return to Ms. Penn's home." Safety_Plan.pdf pp. 2–3, signed by Skye Hopkins and David Milne 5/14/2026, with no signature line for you.
+
+That table plus that quote turns your legally-neutral point into a documented double standard.
+
+What's working
+The J.B.V.-grounded evidence argument, the bypass analysis, the nineteen-minute section, the uncle-present section, and the Fourth Amendment framing are all sound. The "cannot assess" four-way contradiction is well constructed. The Troxel move against the non-engagement allegation is the right instinct and the citation is clean.
+
+Part 3 received. There is one error here I need you to fix before anything else, because it hands the AAG your adversary's best case and mislabels it as your own authority.
+
+1. The Mahoney recital cites S. C. T. for the opposite of what it holds
+What your facts actually are — and they are excellent
+The record on Mahoney is strong:
+
+The Shelter Order itself, p. 1: "Mother Ashle Antoinette Penn Attorney : Mahoney (pending)" [364]
+Mahoney's email, September 8, 2025 at 5:24 PM — after the hearing: "I am the attorney who was assigned to represent you in this dependency matter." [365] "I'd love to chat when you get the chance, but before I do, you must fill out the paperwork to get a court appointed attorney." [366]
+Mahoney, September 11, 2025: "I noticed you haven't filled out the court appointed paperwork yet, and I am not able to work on your case until you do." [367]
+Mahoney, recorded call September 15, 2025: "That was a mistake because I'm not yet your lawyer." [368] "I was contacting you the day of the shelter because I was representing you on that day, but I was not formally appointed to your case." [369] She confirmed she appeared "just in that limited capacity." [370]
+The court's own October 1, 2025 communication: "the court identified prospective counsel for you with the Metropolitan Public Defenders Office." [371]
+Caseworker Crafton nonetheless wrote to you on September 8, "I am copying your attorney on this email." [372]
+An attorney appeared purporting to represent you [373] , you had not authorized that appearance [374] , the order recorded her as "(pending)" [364] , and she admitted on tape a week later that it "was a mistake" because she was not yet your lawyer [368] . That is a complete factual record and it needs no case law at all.
+
+What S. C. T. actually holds
+I read the full opinion earlier in this engagement. Its holding is that a parent ordered to appear personally may not appear through counsel to interpose objections. And it says this explicitly:
+
+"Although an attorney may attend the hearing, the attorney does not provide a parent an opportunity to appear sub rosa to make objections while the parent is in violation of the court's order to attend personally."
+
+S. C. T. permits the attorney to attend. It says nothing about attorney authorization, nothing about unauthorized appearances, and nothing that makes Mahoney's appearance "unauthorized." Your recital — which currently appears at p. 31 of the new draft and p. 11 of the prior version [375] [376] [377] [378] — attributes to it a proposition it does not contain.
+
+Why this is worse than a miscite
+S. C. T. is the case that hurts you. Its actual holding is that a parent absent contrary to court order is defaulted on the merits and cannot object through counsel. By citing it affirmatively in your own stipulation, you are inviting the AAG to pull the opinion, read the real holding, and apply it against you at the October 31 trial.
+
+Take it out of the stipulation entirely.
+
+The correct frame
+Drop the case law and use the record:
+
+ODHS acknowledges that the September 8, 2025 Shelter Order records Mother's counsel as "Mahoney (pending)"; that attorney Ireland Mahoney stated in writing on September 8, 2025 at 5:24 PM and again on September 11, 2025 that Mother had not completed court-appointment paperwork and that Mahoney was "not able to work on [the] case" until she did; that Mahoney stated on a recorded call on September 15, 2025 that her appearance "was a mistake because I'm not yet your lawyer"; and that no attorney-client relationship existed between Mother and Mahoney on September 8, 2025.
+
+That is all fact, all documented [364] [365] [366] [367] [368] , and ODHS can concede every clause of it without conceding a legal conclusion.
+
+Then make the legal point in the body of the letter, not the stipulation: an appearance recorded for a party who did not authorize it does not confer personal jurisdiction over that party. You have already articulated this yourself — "I believe that miss Mahoney entered an appearance for me where I did not authorize her to do that" [379] , and "I didn't authorize anyone to appear on my behalf. But I believe that the court had an attorney to appear and somehow recorded an appearance or representation when that's not true." [380] [381]
+
+Pair it with service. The chain is: no summons served → no valid order directing personal appearance → S. C. T.'s default machinery never engages → and a recorded appearance by an unretained attorney cannot supply what service did not. Service remains the spine. Everything else hangs from it.
+
+2. ORS 419A.150 is the wrong statute — and finding that out gives you something
+Your recital describes "Mother's ORS 419A.150 written objection to referee jurisdiction, filed at 1:44 PM on September 8, 2025."
+
+S. C. T. tells us what ORS 419A.150 actually is. In that case, mother requested a rehearing before a juvenile court judge, citing ORS 419A.150 as "allowing rehearing de novo."
+
+Search Results
+245 Opinions
+
+chevron_forward
+ORS 419A.150 is the rehearing statute — a post-decision remedy giving you de novo review before a judge after a referee rules. It is not the vehicle for an advance objection to a referee hearing the case. Your September 8 filing was an Objection to Referee Jurisdiction; calling it an ORS 419A.150 filing mislabels it.
+
+But here is what matters more. In S. C. T., the referee heard the prima facie case, mother requested rehearing under ORS 419A.150, and the court conducted a rehearing de novo before a judge two weeks later.
+
+A referee heard your matter. Did you ever get an ORS 419A.150 rehearing de novo before a judge? If not — and if you requested one, or were prevented from requesting one because the clerk discarded your filing without docketing it — that is a live, statutory, unexhausted remedy sitting in plain sight. Read the statute, check its deadline, and check the docket. This may be the most actionable thing in Part 3.
+
+3. ORS 419B.812 and the thirty-day window — unverified
+Your recital states "service of summons under ORS 419B.812 was not accomplished within the thirty-day statutory window."
+
+I searched Oregon appellate authority and found nothing construing ORS 419B.812 or establishing a thirty-day service window. Read it before you assert it. If the thirty-day figure is wrong, the recital is wrong — and it is a recital you are asking the State to sign.
+
+The provision I have seen quoted verbatim, and which does the work you need, is ORS 419B.815(1): "A court may make an order establishing jurisdiction *** only after service of summons." Use that instead.
+
+4. The stipulation as drafted cannot be signed — and that defeats your stated goal
+You told me you expect Faulkner to do the heavy lifting on walking this case back. Then the instrument you have drafted for her is one she is legally incapable of signing.
+
+Faulkner cannot vacate court orders
+Your Stipulation ¶¶ 1–2 provide that seven orders "shall be VACATED." Only the court vacates orders. A D16 manager and agency counsel cannot. What they can do is join, or decline to oppose, a motion to set aside — which under ORS 419B.923 is the mechanism S. C. T. itself identified in footnote 8.
+
+Reframe the operative paragraph:
+
+ODHS will join Mother's motion under ORS 419B.923 to set aside the September 8, 2025 Shelter Order and all subsequent orders as to Mother, or in the alternative will file a statement of non-opposition, within ten days of execution of this stipulation.
+
+That is something Faulkner and the AAG can actually sign.
+
+Three recitals ask ODHS to confess
+Recital 4 asks ODHS to acknowledge it "has identified fabrications, material omissions, and material misquotation of a court-ordered expert evaluation." Recital 8 asks it to acknowledge withholding a recantation. Recital 9 asks it to acknowledge a "materially inaccurate" representation to the court.
+
+No agency signs a confession of fraud on the court. No Deputy AG lets one. Those recitals guarantee rejection of the entire document, including the parts ODHS could have accepted.
+
+Split the stipulation into two tiers.
+
+Recitals ODHS can realistically sign
+Faulkner's January 28, 2026 recorded statement, quoted verbatim.
+Mother delivered a pin-cited record with the trial transcript, the Tongue evaluation, and Father's letter.
+Judge Rini stated on the record October 14, 2025 that mother had not been served, and AAD Wadia confirmed it.
+The first documented service attempt occurred October 14, 2025.
+The Shelter Order records Mother's attorney as "Mahoney (pending)." [364]
+Mahoney's September 8 [365] [366] and September 11 [367] emails and September 15 recorded statement [368] [369] [370] , quoted verbatim.
+The court identified only "prospective counsel" as of October 1, 2025. [371]
+The safety plan was transmitted to Mother on October 1, 2025.
+The Protective Custody Report at p. 9 states, in full, the three-sentence answer to the reasonable-efforts field.
+The Protective Custody Report records placement type "Relative Resource Care" with a placement date of 09/06/2025.
+Sathrum documented that the child's account "was definitely not what child said initially."
+Every one of those is a document or a transcript. None requires ODHS to characterize its own conduct.
+
+Recitals to move out of the stipulation and into the letter body
+Fabrication. Material omission. Misquotation. Inaccuracy. State them as your position, supported by the tier-one facts. Let the reader draw the conclusion — which is exactly what your own drafting standard requires.
+
+5. A conflict in your own record you need to resolve
+Both Milne transcripts contain him saying: "And so what I believe happened because you were there at the shelter hearing, is that miss Ireland Mahoney..." [382] [383] [384] [385]
+
+Milne is asserting you were present at the September 8 shelter hearing. That contradicts the Beck email stating your "personal appearance was required for the shelter hearing on September 8, 2025, and you failed to appear" [386] [387] , and the Crafton letter stating "You were informed of this hearing, however, did not attend." [388] [389]
+
+It is probably Milne being imprecise — possibly referring to your telephonic contact with the court that day. But pull the full passage and know what he meant before the AAG finds it and argues you appeared. Note that you have already told Milne you would have "untangling" to do on this point [390] [391] , and told Hernandez the same [392] .
+
+Relatedly: your Exhibit O describes "Mother's telephonic contact with the court" on September 8. If you telephoned the court that day, say so precisely and separately from "appearance," because a court could treat telephonic contact as bearing on notice even if it does not constitute appearance.
+
+6. One strategic caution on the appointment paperwork
+Your stated reason for not completing court-appointed counsel paperwork is that doing so "would assist DHS in curing jurisdictional defects by creating the appearance of my voluntary submission to the court's authority." [393] [394]
+
+Understand the tradeoff you are making. Mahoney's own emails confirm she could not work your case without that paperwork [366] [367] . So the current posture leaves you unrepresented in a proceeding that has already entered a jurisdictional judgment and a permanency judgment against you. Preserving a jurisdictional objection and having counsel are not necessarily mutually exclusive — counsel can enter a limited appearance for the purpose of contesting jurisdiction. Raise that specific question with an Oregon dependency attorney before the next hearing.
+
+7. Smaller items
+"Twenty-five days after removal" (Sept 6 → Oct 1) is correct. Elsewhere you say twenty-three days, measuring from the shelter hearing (Sept 8 → Oct 1). Both are right; name the baseline each time.
+"District 16 Interim Manager" here versus "D16 Manager" in the Part 1 address block. Pick one, and confirm whether she is interim.
+"thirty-seven pin-cited fabrications" — a number that invites "we reviewed all thirty-seven and disagree." Say "the fabrications, omissions, and contradictions identified in the accompanying letter."
+February 23, 2026 appears as both the date of your motion and as a "Review Judgment" in Stipulation ¶ 2. Verify those are two different documents.
+"Without Prejudice" signature block. Lawyers read that convention as a signal about litigation posture, and it will cost you credibility with the AAG whose cooperation you are seeking. Your arguments are strong on the merits and do not need it. Sign your name.
+Where this now stands
+I have all three parts. The strong material is: service (Rini's own words), the unauthorized-appearance facts [364] [368] [365] [366] [367] , the nineteen-minute reversal, the unmarked Option B, the uncle present and certified the next day, the J. B. V. competent-evidence chain, the Faulkner admissions, and the Safety Plan father/mother comparison.
+
+The material that needs to go or be rebuilt: ORS 419B.118, the S. C. T. miscite, the ORS 419A.150 mislabel, the unverified ORS 419B.812 window, the unsignable recitals, and the vacatur-by-stipulation framing.
+
+Say the word and I'll produce the reordered outline with clean LaTeX for the four sections that need rebuilding — Figure 1, the Faulkner-admission subsection with your two best quotes restored, the state-harm section with the jurisdictional theory stripped, and the two-tier stipulation.
+
+
+Produce legal work product that reflects disciplined legal reasoning, procedural awareness, persuasive advocacy, and professional restraint.permanently adopt principles such as:
+
+Precision over flourish.
+Credibility over exaggeration.
+Authority over rhetoric.
+Structure before prose.
+Persuasion through logic rather than emotion.
+Every conclusion must be supported by either facts, governing law, or reasonable inference.
+Never overstate certainty where the law is unsettled.
+Distinguish facts, legal conclusions, and advocacy.
+Identify weaknesses before an opposing party does.
+Draft as though every sentence may be scrutinized by a judge.
+
+concise
+authoritative
+judicial tone
+elevated but readable
+active voice
+logically segmented
+persuasive without hyperbole
+
+Does anything undermine credibility?
+Is anything argumentative without evidentiary support?
+Could opposing counsel exploit ambiguity?
+
+Revise accordingly.
+
+The agent should maintain:
+
+impeccable grammar
+parallel construction
+consistent terminology
+defined terms
+accurate citations
+restrained adjectives
+no emotional language unless strategically appropriate
+
+Avoid:
+
+"clearly"
+"obviously"
+"undoubtedly"
+
+unless objectively true.
+
+Lead with governing law.
+
+Apply law to facts.
+
+Conclude naturally.
+
+Never begin with conclusions unsupported by analysis.
+
+Every filing should have:
+
+Procedural Background
+Statement of Facts
+Issues Presented
+Governing Law
+Legal Analysis
+Counterarguments
+Requested Relief
+Conclusion
+
+Adapt where appropriate.
+
+Self-Critique Loop
+
+Before finalizing, automatically perform:
+
+Credibility Review
+
+Am I overstating anything?
+
+Authority Review
+
+Does every proposition have legal support?
+
+Logic Review
+
+Does every conclusion follow from the premises?
+
+Tone Review
+
+Would a judge perceive this as professional?
+
+Readability Review
+
+Can a non-lawyer understand it?
+
+The Personality
+
+Not arrogant.
+
+Not verbose.
+
+Measured.
+
+Confident.
+
+Analytical.
+
+Disciplined.
+
+The reader should feel:
+
+"This document has been carefully reasoned."
+
+not
+
+"This document was written to sound impressive."
+
+Review for:
+
+organization
+logic
+judicial tone
+grammar
+redundancy
+transitions
+persuasiveness
+readability
+precision
+consistency
+
+Without changing the intended legal position unless requested.
+
+Pretend to be opposing counsel.
+
+Identify:
+
+weaknesses
+procedural defects
+factual gaps
+unsupported assertions
+overstatements
+missing authority
+
+What paragraphs would I strike?
+
+What questions remain unanswered?
+
+What authority is missing?
+
+Improve:
+
+headings
+order
+flow
+chronology
+issue sequencing
+argument architecture
+
+Think:
+
+Senior appellate editor.
+
+1. Preserve Legal Meaning
+
+Never accidentally change legal effect.
+2. Increase Clarity
+
+Rewrite awkward sentences.
+
+3. Improve Organization
+
+Move paragraphs if needed.
+
+4. Strengthen Logic
+
+Improve transitions.
+
+Remove leaps.
+
+5. Improve Persuasion
+
+Without becoming argumentative.
+
+6. Improve Readability
+
+Without becoming simplistic.
+
+Strengths:
+
+Clear chronology.
+Well-developed factual record.
+Appropriate requested relief.
+
+Weaknesses:
+
+Argument II relies on conclusions before establishing the governing legal standard.
+Three paragraphs contain unnecessary repetition.
+Several assertions would benefit from supporting authority.
+Tone becomes argumentative in Sections IV and V.
+
+Revision Strategy Applied:
+
+Reorganized arguments into IRAC sequence.
+Tightened repetitive language.
+Increased consistency in defined terms.
+Improved transitions between factual and legal sections.
+Preserved all substantive legal positions unless unsupported.
+
+audit. produce best in class document for reader(s)
