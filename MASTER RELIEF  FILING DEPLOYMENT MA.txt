@@ -1,0 +1,28 @@
+MASTER RELIEF / FILING DEPLOYMENT MATRIX
+
+(Draft v1 — driven from Penn_Master_Violations_Matrix_v7_fresh.xlsx)
+
+ID	Case	Issue / Violation Category	Evidence Source	Legal Duty / Question	Filing Vehicle	Relief Requested
+D-001	25JU04261	Party participation / ability to appear	dependency docket, notices, prior filings	Is mother properly recognized as appearing party with ability to participate?	Notice of Appearance	Recognize appearance; direct service of future filings
+D-002	25JU04261	Court characterization of facts/proceedings	Dependency Discussion; hearings; record	Does the court record accurately reflect proceedings?	Objection to Characterization + Motion to Correct Record	Correct disputed factual/procedural statements
+D-003	25JU04261	Denial/restriction of dependency records	ORS 419A.255 request; court response	What access rights exist to juvenile dependency records?	Motion to Compel Records / Access	Order permitting access/copies as legally required
+D-004	25JU04261	Court refusal to provide findings	prior rulings/orders	What was the factual and legal basis for denial?	Motion for Written Findings	Findings sufficient for review
+D-005	25JU04261	Service / notice / jurisdiction defects	Service and Dismissal Dependency; notices	Did the court obtain proper authority to proceed?	Motion to Dismiss	Dismiss dependency action
+D-006	25JU04261	Judicial duty regarding records/access	record denial history	Is there a clear legal duty to perform a required act?	Mandamus Petition	Order compelling performance
+D-007	25JU04261	Interpretation of rights/duties	entire dependency record	What are parties’ legal rights regarding access/process?	Declaratory Relief	Declaration of rights and obligations
+CRIMINAL — 24CR49043
+ID	Case	Issue / Violation Category	Evidence Source	Legal Duty / Question	Filing Vehicle	Relief Requested
+C-001	24CR49043	Official record access / FTR	4.10.26 Records Request; FTR issue	Does defendant have access to the official record needed for review?	Motion Regarding FTR / Record Access	Access/order for production or review
+C-002	24CR49043	Court record preservation	FTR, hearings, filings	Is the record complete and reviewable?	Motion for Written Findings	Written explanation/order
+C-003	24CR49043	Probable cause / arrest factual conflict	Rambin affidavit, reports, CAD, Target docs	Does the record contain unresolved material contradictions?	Declaratory Relief groundwork	Declaration regarding legal status/issues
+C-004	24CR49043	Discovery/Brady concerns	Brady notice, discovery files, reports	Were disclosure duties satisfied?	Brady-related motion / preservation	Disclosure/remedy
+C-005	24CR49043	Judicial impartiality	Judge Thompson Omnibus; judicial complaint	Is there an objective basis for recusal?	Motion to Recuse	Assignment to different judge
+C-006	24CR49043	Court duty / extraordinary relief	record access disputes	Was a ministerial duty refused?	Mandamus if supported	Compel performance
+C-007	24CR49043	Legal status of disputed proceedings	entire record	Need declaration of rights/duties	Declaratory Relief	Judicial declaration
+CRIMINAL / CONTEMPT — 24CR27775
+ID	Case	Issue / Violation Category	Evidence Source	Filing Vehicle	Relief
+T-001	24CR27775	Notice/service	register, orders	Motion challenge	Dismiss/vacate
+T-002	24CR27775	Contempt initiation authority	contempt filings	Objection/Motion	Determine validity
+T-003	24CR27775	Findings	orders	Motion for Written Findings	Require explanation
+T-004	24CR27775	Record access	register/FTR	Record motion	Access/preservation
+T-005	24CR27775	Extraordinary relief	all above	Mandamus/declaratory if appropriate	Compel lawful procedure
